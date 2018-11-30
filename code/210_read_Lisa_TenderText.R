@@ -21,7 +21,7 @@ LisaTT.r <-
 StepFPs.r <-
   readr::read_csv(file="./data/prod_blue_tree.csv")
 
-StepAttLov.r <-
+StepTTAttLov.r <-
   readr::read_csv(file="./data/tt_attribute_lov.csv")
   
 StepAttributes.r <-
@@ -37,9 +37,11 @@ LisaTT.c <-
   dplyr::mutate(FP_ID = paste("FP", Code_12NC, sep="-")) %>%
   dplyr::left_join(StepFPs.r, by = "FP_ID")
 
-StepAttLov.c <-
-  StepAttLov.r %>%
+StepTTAttLov.c <-
+  StepTTAttLov.r %>%
   dplyr::left_join(StepAttributes.r, by = "ID")
+
+remove(StepTTAttLov.r, StepAttributes.r, LisaTT.r, StepFPs.r)
 
 ###############################################################################
 # validations
@@ -94,16 +96,48 @@ LisaTT.c %>%
 
 # 1. split the textBrief into separate fields for which the LOV-id can be found.
 #    note: probably a mapping of the separate fields to the LOV-values is required!
+#
+# LOV_values.c <-
+#   LisaTT.c %>%
+#   dplyr::distinct(TextBrief, .keep_all = TRUE) %>% # from 2955 down to 1120 rows...
+#   dplyr::mutate(attributes = stringr::str_split(TextBrief, pattern = ","),
+#                 attributes = stringr::str_trim(attributes)) %>%
+#   dplyr::select(FP_ID, attributes)
+# 
+# glimpse(LOV_values.c)
+# 
+# # !!!!!
+# # ToDo:
+# # split attributes into long-form & merge with StepAttLov.c !
+# 
+# LOV_values.c2 <-
+#   LOV_values.c %>%
+#   tidyr::separate(col = attributes, 
+#                   into = c("tta0", "tta1", "tta2", "tta3", "tta4", "tta5", "tta6", "tta7", "tta8", "tta9"), 
+#                   sep = ",")
+# # this can be accomplished more easily!!!
 
 LOV_values.c <-
   LisaTT.c %>%
   dplyr::distinct(TextBrief, .keep_all = TRUE) %>% # from 2955 down to 1120 rows...
-  dplyr::mutate(attributes = stringr::str_split(TextBrief, pattern = ","),
-                attributes = stringr::str_trim(attributes)) %>%
-  dplyr::select(FP_ID, attributes)
+  tidyr::separate(col = TextBrief, 
+                  into = c("tta0", "tta1", "tta2", "tta3", "tta4", "tta5", "tta6", "tta7", "tta8", "tta9"), 
+                  sep = ",") %>%
+  dplyr::select(FP_ID, starts_with("tta")) %>%
+  # from wide to long format
+  tidyr::gather(key = "attribute", value = "value", tta0:tta9) %>%
+  # remove attributes with na-values
+  dplyr::filter(!is.na(value)) 
 
-glimpse(LOV_values.c)
+# merge with StepAttLov.c
+LOV_values_with_STEP_IDs.c <-
+  LOV_values.c %>%
+  dplyr::inner_join(StepTTAttLov.c,
+                   by = c("value" = "Name"))
 
-# !!!!!
-# ToDo:
-# split attributes into long-form & merge with StepAttLov.c !
+# NOT A SINGLE MATCH !!!
+
+# Possible migration strategy
+#
+# add new values to the TT LOV which are only valid for the "de_XX" contexts.
+#
