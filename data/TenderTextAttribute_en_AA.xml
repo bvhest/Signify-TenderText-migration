@@ -1,0 +1,1764 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Configuration:
+<STEP-ProductInformation ExportDerivedAttrs="false" ResolveInlineRefs="true">
+<ListOfValuesGroupList/>
+<ListsOfValues ExportSize="Minimum"/>
+<AttributeGroupList ExportSize="Minimum"/>
+<AttributeList ExportSize="Minimum"/>
+</STEP-ProductInformation>
+
+Export from Lighting
+Classifications All
+Products All
+Assets All
+
+Exported by database exporter.
+-->
+<STEP-ProductInformation ExportTime="2018-11-21 16:01:40" ExportContext="en_AA" ContextID="en_AA" WorkspaceID="Main" UseContextLocale="false">
+
+  <ListOfValuesGroupList>
+    <ListOfValuesGroup ID="List Of Values group root">
+      <Name>Lists of Values / LOVs</Name>
+      <ListOfValuesGroup ID="19. Operating Conditions (LOV)">
+        <Name>19. Operating Conditions (LOV)</Name>
+      </ListOfValuesGroup>
+      <ListOfValuesGroup ID="ProductFamilyTable (LOV)">
+        <Name>ProductFamilyTable (LOV)</Name>
+      </ListOfValuesGroup>
+      <ListOfValuesGroup ID="FilterGroup">
+        <Name>FilterGroup</Name>
+      </ListOfValuesGroup>
+      <ListOfValuesGroup ID="20. US Attributes (LOV)">
+        <Name>20. US Attributes (LOV)</Name>
+      </ListOfValuesGroup>
+      <ListOfValuesGroup ID="ETIM.V7.Group">
+        <Name>ETIM.V7.Group</Name>
+      </ListOfValuesGroup>
+      <ListOfValuesGroup ID="ETIM.V7.List.Of.Values">
+        <Name>ETIM.V7.List.Of.Values</Name>
+      </ListOfValuesGroup>
+      <ListOfValuesGroup ID="51. TenderText">
+        <Name>51. TenderText</Name>
+      </ListOfValuesGroup>
+      <ListOfValuesGroup ID="ETIM.V6.List.Of.Values">
+        <Name>ETIM.V6.List.Of.Values</Name>
+      </ListOfValuesGroup>
+      <ListOfValuesGroup ID="07. Temperature">
+        <Name>07. Temperature (LOV)</Name>
+      </ListOfValuesGroup>
+      <ListOfValuesGroup ID="EcoPassportLOVs">
+        <Name>Eco Passport LOVs</Name>
+      </ListOfValuesGroup>
+      <ListOfValuesGroup ID="ETIM List Of Values">
+        <Name>ETIM List Of Values</Name>
+      </ListOfValuesGroup>
+      <ListOfValuesGroup ID="Vocabularies">
+        <Name>77. Vocabularies</Name>
+        <AttributeGroupLink AttributeGroupID="Vocabularies"/>
+      </ListOfValuesGroup>
+      <ListOfValuesGroup ID="Meta data lovs">
+        <Name>Meta data LOVs</Name>
+      </ListOfValuesGroup>
+      <ListOfValuesGroup ID="Translation">
+        <Name>Translation (LOV)</Name>
+      </ListOfValuesGroup>
+      <ListOfValuesGroup ID="xUCDM.Message.LOVs">
+        <Name>xUCDM Message LOVs</Name>
+      </ListOfValuesGroup>
+      <ListOfValuesGroup ID="06. Approval and Application">
+        <Name>06. Approval and Application (LOV)</Name>
+        <ListOfValuesGroup ID="06. Status Information">
+          <Name>06. Status Information</Name>
+        </ListOfValuesGroup>
+      </ListOfValuesGroup>
+      <ListOfValuesGroup ID="ProductVariants">
+        <Name>ProductVariants</Name>
+      </ListOfValuesGroup>
+      <ListOfValuesGroup ID="Core Characteristics (LOV)">
+        <Name>70. Core Characteristics (LOV)</Name>
+      </ListOfValuesGroup>
+      <ListOfValuesGroup ID="99 ToBeRemoved">
+        <Name>99 ToBeRemoved</Name>
+      </ListOfValuesGroup>
+      <ListOfValuesGroup ID="02. Mechanical and Housing (LOV)">
+        <Name>02. Mechanical and Housing (LOV)</Name>
+      </ListOfValuesGroup>
+      <ListOfValuesGroup ID="ETIM Group">
+        <Name>ETIM Group</Name>
+      </ListOfValuesGroup>
+      <ListOfValuesGroup ID="03. Operating and Electrical">
+        <Name>03. Operating and Electrical (LOV)</Name>
+      </ListOfValuesGroup>
+      <ListOfValuesGroup ID="04. Light-techical">
+        <Name>04. Light-technical (LOV)</Name>
+      </ListOfValuesGroup>
+      <ListOfValuesGroup ID="00-Product-IdentificationLOV">
+        <Name>00. Product Identification (LOV)</Name>
+      </ListOfValuesGroup>
+      <ListOfValuesGroup ID="01-SAP-Owned-LOV">
+        <Name>01. SAP Owned (LOV)</Name>
+      </ListOfValuesGroup>
+      <ListOfValuesGroup ID="PRISMA-IMPORTED-LOVGRP">
+        <Name>Prisma Imported LOVs</Name>
+      </ListOfValuesGroup>
+      <ListOfValuesGroup ID="13. Accessories">
+        <Name>13. Accessories  (LOV)</Name>
+      </ListOfValuesGroup>
+      <ListOfValuesGroup ID="05. Controls and Dimming">
+        <Name>05. Controls and Dimming (LOV)</Name>
+      </ListOfValuesGroup>
+      <ListOfValuesGroup ID="14. Commercial Product Attributes">
+        <Name>14. Commercial Product Attributes (LOV)</Name>
+      </ListOfValuesGroup>
+    </ListOfValuesGroup>
+  </ListOfValuesGroupList>
+
+  <ListsOfValues>
+    <ListOfValue ID="TenderText-lov" ParentID="51. TenderText" AllowUserValueAddition="false" UseValueID="true" Referenced="true">
+      <Name>Designation characteristics - lov</Name>
+      <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""/>
+      <Value ID="OUTPWIRDIA_NOM2">Output Wire Cross Section (Nom) 2</Value>
+      <Value ID="STBPWRCONS_MAX">Standby Power Consumption (Max)</Value>
+      <Value ID="ENVHGCONT_NOM">Mercury (Hg) Content (Nom)</Value>
+      <Value ID="TMPSURF_MAX">Therm.Resistance @ Therm.Interface Surf. (Max)</Value>
+      <Value ID="CORESIZE">Core Size</Value>
+      <Value ID="LAMCUREM_MIN">Lamp Current (EM) (Min)</Value>
+      <Value ID="UVARED0H">UV-A Radiation 0Hr (IEC)</Value>
+      <Value ID="CAPVAL">Capacitor Value</Value>
+      <Value ID="DEPR500">Depreciation At 500 Hours</Value>
+      <Value ID="DECOACC">Decorative accessories</Value>
+      <Value ID="LIFE100_MAX">Nominal Lifetime (Max)</Value>
+      <Value ID="PWRFCTR_MIN">Power Factor (Min)</Value>
+      <Value ID="PWRFCT100_MIN">Power Factor 100% Load (Min)</Value>
+      <Value ID="STILTSIDE">Standard tilt angle side entry</Value>
+      <Value ID="TESTSURGPC">Surge Test Performance Criterium</Value>
+      <Value ID="CCY_NOM">Chromaticity Coordinate Y (Nom)</Value>
+      <Value ID="TAMBIENTG_MIN">T-Ambient (Gear) (Min)</Value>
+      <Value ID="PRLEVLNEAR_MAX">Protection Level Up (LN-Earth) At 5 kA (Max)</Value>
+      <Value ID="PLTOPDIAM">Pole top diameter</Value>
+      <Value ID="CHROMA">Initial chromaticy</Value>
+      <Value ID="PWRFCTR_NOM">Power Factor (Nom)</Value>
+      <Value ID="FOOTNOTEHID2">Footnotes HID 2</Value>
+      <Value ID="OPFREQ_NOM">Operating Frequency (Nom)</Value>
+      <Value ID="CSA-MARK">CSA mark</Value>
+      <Value ID="LRTYP">Light regulation type</Value>
+      <Value ID="SURF85">Surface area at 85 degrees</Value>
+      <Value ID="LIGHTSREPL">Light source replaceable</Value>
+      <Value ID="LIFEL70T25">Life to 70% init flux at 25 °C</Value>
+      <Value ID="WAVEL_MAX">Wavelength (Max)</Value>
+      <Value ID="WIRGAUGE_NOM">Wire Gauge (Nom)</Value>
+      <Value ID="PLACCANGLE">Pole accessory orientation angle</Value>
+      <Value ID="LLMFENDL_MIN">LLMF At End Of Nominal Lifetime (Min)</Value>
+      <Value ID="ASYBEAM">Asymmetric beam angle</Value>
+      <Value ID="SO-CRID25_NOM">Color Rendering Index (SO) (Nom)</Value>
+      <Value ID="CTRLWIRDIA_MAX">Control Wire Cross Section (Max)</Value>
+      <Value ID="BTTVOLTGE">Battery Voltage</Value>
+      <Value ID="STNDEMERBU">Emergency Standard</Value>
+      <Value ID="FOOTNOTEHID4">Footnotes HID 4</Value>
+      <Value ID="OUTPWIRDIA_MAX">Output Wire Cross Section (Max)</Value>
+      <Value ID="MAXONMCBB_MIN">Number Of Products On MCB (16A Type B) (Min)</Value>
+      <Value ID="IGNVOLT_MAX">Ignition Voltage (Max)</Value>
+      <Value ID="R9">Saturated Red</Value>
+      <Value ID="XUCDM.COPY.Product.Title">Order product name</Value>
+      <Value ID="BEAMDESCR">Beam Description</Value>
+      <Value ID="ANSICODEHID">ANSI Code HID</Value>
+      <Value ID="BULBSHAPE">Bulb Shape</Value>
+      <Value ID="TIGNITION_MIN">T-Ignition (Min)</Value>
+      <Value ID="PSY-CDM">System Power On CDM</Value>
+      <Value ID="ADJOUTCUR">Adjustable output current</Value>
+      <Value ID="SKG-MARK">SKG mark</Value>
+      <Value ID="RFI55015">EMI 9 kHz ... 30 MHz</Value>
+      <Value ID="TCASEMAX_MAX">T-Case Maximum (Max)</Value>
+      <Value ID="LUMHEIGHT2">Luminaire mounting height 2</Value>
+      <Value ID="PLBSHEIGHT">Pole base height</Value>
+      <Value ID="PLTACCHGHT">Pole accessory height from top</Value>
+      <Value ID="PLO-TL5HE">Power Loss On TL5 HE</Value>
+      <Value ID="RATEDPOWS">Power (Rated) Setting(s)</Value>
+      <Value ID="GEARFAM">Gear family</Value>
+      <Value ID="ASYMBEAM">Asymmetric beam angle</Value>
+      <Value ID="ACCMV">Accessories included</Value>
+      <Value ID="PLXTHEIGHT">Pole extension height</Value>
+      <Value ID="INPOVVOLT">Input overvoltage resistance</Value>
+      <Value ID="COLLAMP2">Light source color 2</Value>
+      <Value ID="LIFE5FAIL_NOM">Life To 5% Failures (Nom)</Value>
+      <Value ID="CRESTFCTOR_NOM">Crestfactor (Nom)</Value>
+      <Value ID="CRINDEX20H_NOM">Color Rendering Index at 20h (Nom)</Value>
+      <Value ID="MOUNTING">Mounting</Value>
+      <Value ID="STILTTOP">Standard tilt angle posttop</Value>
+      <Value ID="NMCB">Number of products on MCB of 16 A type B</Value>
+      <Value ID="LUMENFLUX_NOM">Luminous Flux (Nom)</Value>
+      <Value ID="FC">Filter coil</Value>
+      <Value ID="PCKCONF">Packaging configuration</Value>
+      <Value ID="BULBFIN">Bulb Finish</Value>
+      <Value ID="CABCAPMAX_NOM">Cable Capacity Wires Device To Lamp (Nom)</Value>
+      <Value ID="AIMATT">Aiming attachments</Value>
+      <Value ID="THDEUR220_MAX">Total Harmonic Distortion EUR At 220 V (Max)</Value>
+      <Value ID="TEMBULB_MAX">Bulb Temperature (Max)</Value>
+      <Value ID="OPTHEIGHT">Optic height</Value>
+      <Value ID="VOLTINPAC">Input Voltage (AC)</Value>
+      <Value ID="ENGTYP">Light source engine type</Value>
+      <Value ID="RALSTD">Standard RAL color</Value>
+      <Value ID="PSY-SOXE">System Power On SOX-E</Value>
+      <Value ID="MAXONMCBB_NOM">Number Of Products On MCB (16A Type B) (Nom)</Value>
+      <Value ID="FADERATEDN">Fade Down Rate</Value>
+      <Value ID="LMAIN8000_MAX">Lumen Maintenance 8000 h (Max)</Value>
+      <Value ID="PLACCCLR">Pole accessory color</Value>
+      <Value ID="NOLOADPROT">Open Circuit Protection</Value>
+      <Value ID="LIFE50FAIL_MIN">Life To 50% Failures (Min)</Value>
+      <Value ID="CURRENT">Rated current</Value>
+      <Value ID="TAMBIENTG_MAX">T-Ambient (Gear) (Max)</Value>
+      <Value ID="SRVCCLS">Serviceability class</Value>
+      <Value ID="TIME70LF">Lifetime to 70% luminous flux</Value>
+      <Value ID="ENRGYSTAR">Energy star mark</Value>
+      <Value ID="WIRGAUGE_MIN">Wire Gauge (Min)</Value>
+      <Value ID="IGNCATNUMB">Ignitor Catalog Number</Value>
+      <Value ID="RATEDPOWER_MAX">Power (Rated) (Max)</Value>
+      <Value ID="LSF8000">LSF 8000 h Rated</Value>
+      <Value ID="INPCUR_MIN">Input Current (Min)</Value>
+      <Value ID="LEADWIRDIA">Input Wire Cross Section (Nom)</Value>
+      <Value ID="LR">Light regulation</Value>
+      <Value ID="LLMF30000">LLMF 30000 h Rated</Value>
+      <Value ID="CVRMAT">Optical cover/lens material</Value>
+      <Value ID="TOTWIDTH">Overall width</Value>
+      <Value ID="LIFEYEAR">Life With 3 Hour Per Day Use</Value>
+      <Value ID="PSY-TL5HE">System Power On TL5 HE</Value>
+      <Value ID="BATTCHCURR_NOM">Battery Charge Current (Nom)</Value>
+      <Value ID="EFF320UP">UV Effective Power 320nm</Value>
+      <Value ID="MASTSLAVE">Dual Fixture Master/Slave</Value>
+      <Value ID="PLBSDIAM">Pole base diameter</Value>
+      <Value ID="STEP.MARM.UMREZ.PCE">Numerator - Quantity Per Pack</Value>
+      <Value ID="SO-CCYD25_MIN">Chromaticity Coordinate Y (SO) (Min)</Value>
+      <Value ID="LITWID">Lit width</Value>
+      <Value ID="FRDLGHTOUT">Forward Luminous Output</Value>
+      <Value ID="SUPVIGN_NOM">Ignition Supply Voltage (Nom)</Value>
+      <Value ID="MAXBALLTH">Max Ballast-Lamp Distance Through Wiring</Value>
+      <Value ID="SURFACE76">Surface 76</Value>
+      <Value ID="PWRFACTWIC">Power Factor With PF Compensation</Value>
+      <Value ID="INRCURPEAK_NOM">Inrush Current Peak (Nom)</Value>
+      <Value ID="STEP.MARM.NTGEW.PCE">Net Weight (Piece)</Value>
+      <Value ID="CORTEMP_MAX">Correlated Color Temperature (Max)</Value>
+      <Value ID="BRCLRCH">Bracket color choice</Value>
+      <Value ID="CTRLVOLT">Control signal voltage</Value>
+      <Value ID="TOTLITSUR">Total lit surface</Value>
+      <Value ID="LIFEL80B10">Useful life L80B10</Value>
+      <Value ID="PLA-TL5">Lamp Power On TL5</Value>
+      <Value ID="TEMPCAP_NOM">Cap-Base Temperature (Nom)</Value>
+      <Value ID="AUXLMP">Auxiliary light source</Value>
+      <Value ID="PEAKIGN_NOM">Ignition Peak Voltage (Nom)</Value>
+      <Value ID="HEATDIS">Heat dissipation</Value>
+      <Value ID="STRIK5KA">Strikes At 5 kA (Common/Differential)</Value>
+      <Value ID="PLA-TL5ECO">Lamp Power On TL5 ECO</Value>
+      <Value ID="OUTPVOLT">Output Voltage</Value>
+      <Value ID="TCSWITCHOF_MIN">T-Case Switch Off (Min)</Value>
+      <Value ID="ENMET">Energy Metering</Value>
+      <Value ID="LIFE20FAIL_NOM">Life To 20% Failures (Nom)</Value>
+      <Value ID="TAMBIENT_MAX">T-Ambient (Max)</Value>
+      <Value ID="LIFEL90B50">Median useful life L90B50</Value>
+      <Value ID="INSHORTCI">Input Current (Short Circuit)</Value>
+      <Value ID="DIAM">Diameter</Value>
+      <Value ID="PFC">Product family code</Value>
+      <Value ID="UVCRADIA">UV-C Radiation</Value>
+      <Value ID="IGNATT">Ignition Attempts</Value>
+      <Value ID="LSF24000">LSF 24000 h Rated</Value>
+      <Value ID="STEP.MARM.EAN11.CAS">EAN/UPC - Case</Value>
+      <Value ID="SOLUMFD25_NOM">Luminous Flux (SO) (Nom)</Value>
+      <Value ID="SWITCYCL">Switching Cycle</Value>
+      <Value ID="COATING">Coating</Value>
+      <Value ID="INTERFACE">Control Interface</Value>
+      <Value ID="OPTWIDTH">Optic width</Value>
+      <Value ID="LIFE20FAIL_MIN">Life To 20% Failures (Min)</Value>
+      <Value ID="LRPERC">Light regulation percentage</Value>
+      <Value ID="LMNCNODE">Luminance per node</Value>
+      <Value ID="NTCCORTEMP">NTC corresponding temperature</Value>
+      <Value ID="MEAS_TOBE_GEN">Measurement Files to be Generated</Value>
+      <Value ID="THICKNESS">Thickness/gauge</Value>
+      <Value ID="PEAKIGN_MAX">Ignition Peak Voltage (Max)</Value>
+      <Value ID="LSF6000">LSF 6000 h Rated</Value>
+      <Value ID="CABL">Cable</Value>
+      <Value ID="OPTMAT">Optic material</Value>
+      <Value ID="LMAIN5000_MIN">Lumen Maintenance 5000 h (Min)</Value>
+      <Value ID="CAPBASE">Cap-Base</Value>
+      <Value ID="PLCLRBS">Pole British Standard color</Value>
+      <Value ID="IPCLASSLUM">IP Classification Luminaire</Value>
+      <Value ID="LMAIN2000_MIN">Lumen Maintenance 2000 h (Min)</Value>
+      <Value ID="DRIVERINCL">Driver included</Value>
+      <Value ID="LAMPPWR">Lamp power</Value>
+      <Value ID="PLHEIGHT">Pole height</Value>
+      <Value ID="DEFLMPSELE">Default Lamp Selected</Value>
+      <Value ID="CLO">Constant light output</Value>
+      <Value ID="RTLMPQTYGR">Number Of Lamps</Value>
+      <Value ID="LUMFLUXSRAT">Luminous Flux (Rated) Setting(s)</Value>
+      <Value ID="LAMCRU_MAX">Lamp Current Run-Up (Max)</Value>
+      <Value ID="LLMF4000">LLMF 4000 h Rated</Value>
+      <Value ID="LMEFFMAXRAT_NOM">Luminous Efficacy (@ Max Lumen, Rated) (Nom)</Value>
+      <Value ID="PLA-SOX">Lamp Power On SOX</Value>
+      <Value ID="XUCDM.COPY.LP_CSI_LOCCOD">Local order code</Value>
+      <Value ID="LMAIN10US">Lumen Maintenance - 10% Life</Value>
+      <Value ID="OUTPWIRDIA_MIN">Output Wire Cross Section (Min)</Value>
+      <Value ID="CERTULRECCAN">UL Recognized Canada US</Value>
+      <Value ID="GALVISO">Galvanic isolation</Value>
+      <Value ID="CCY_MIN">Chromaticity Coordinate Y (Min)</Value>
+      <Value ID="RELHUMSTR">Relative humidity (storage)</Value>
+      <Value ID="LMAIN20000">Lumen Maintenance 20000 h</Value>
+      <Value ID="CAPHEIG">Capacitor Height</Value>
+      <Value ID="STRIK1KA">Strikes At 1 kA (Common/Differential)</Value>
+      <Value ID="LIFE5FAIL_MIN">Life To 5% Failures (Min)</Value>
+      <Value ID="STNDENVMNT">Environmental Standard</Value>
+      <Value ID="BRCOAT">Bracket coating</Value>
+      <Value ID="OPTGEOTYPE">Optical Compartment Geo Type</Value>
+      <Value ID="CAPTOP_MIN">Capacity Tolerance (Min)</Value>
+      <Value ID="CTRINPPROT">Control Input Protection</Value>
+      <Value ID="NAMEEXT">Lamp version</Value>
+      <Value ID="SYSEFF">System Efficacy</Value>
+      <Value ID="TOTDIAM">Overall diameter</Value>
+      <Value ID="IGNTYPE">Igniton Type</Value>
+      <Value ID="SYSPOWER">Initial input power</Value>
+      <Value ID="FRMCLR">Frame color</Value>
+      <Value ID="APPLICAT">Application</Value>
+      <Value ID="TEMPINCH_NOM">Pinch Temperature (Nom)</Value>
+      <Value ID="LR2">Light regulation 2</Value>
+      <Value ID="PLO-TL">Power Loss On TL</Value>
+      <Value ID="DFC_NOM">Damage Factor D/fc (Nom)</Value>
+      <Value ID="LAMPPOWER">Lamp power</Value>
+      <Value ID="LMAIN70">Life To 70% Lumen Maintenance</Value>
+      <Value ID="TEMPDESIGN_MAX">Design Temperature (Max)</Value>
+      <Value ID="PSY-PLC">System Power On PL-C</Value>
+      <Value ID="LUMENNODE">Light source flux per node</Value>
+      <Value ID="NUNIT">Number of units</Value>
+      <Value ID="OPERPOS">Operating Position</Value>
+      <Value ID="LAMPCONN">Lamp Connection</Value>
+      <Value ID="LINEVOLT">Input Voltage</Value>
+      <Value ID="OVLOADPROT">Over Power Protection</Value>
+      <Value ID="LEADWIRDIA_MAX2">Input Wire Cross Section (Max) 2</Value>
+      <Value ID="LSF8000P">LSF Preheat 8000 h Rated</Value>
+      <Value ID="ACTTEMPPRT">Active Temperature Protection</Value>
+      <Value ID="JCODE">J Code</Value>
+      <Value ID="BATTGUARVIGN">Battery Voltage Guaranteed Ignition</Value>
+      <Value ID="PLA-SOXE">Lamp Power On SOX-E</Value>
+      <Value ID="OPTLENGTH">Optic length</Value>
+      <Value ID="OPCIRCVLT">Open Circuit Voltage</Value>
+      <Value ID="AIM">Aiming memory</Value>
+      <Value ID="LSF20000">LSF 20000 h Rated</Value>
+      <Value ID="LIFEL50T50">Life to 50% init flux at 50 °C</Value>
+      <Value ID="OUTWID">Outer width</Value>
+      <Value ID="LMAIN10000_MIN">Lumen Maintenance 10000 h (Min)</Value>
+      <Value ID="ELECACC">Electrical accessories</Value>
+      <Value ID="INRUSHTIME">Inrush time</Value>
+      <Value ID="LIFE35US">Life to 35% failures</Value>
+      <Value ID="LEDTECHS">Technical Type Setting(s)</Value>
+      <Value ID="SUPVIGN_MIN">Ignition Supply Voltage (Min)</Value>
+      <Value ID="LVOLT_MAX">Voltage (Max)</Value>
+      <Value ID="SHAPE">Shape</Value>
+      <Value ID="PRT-TL5HT">Rated Lamp Power On TL5 HT</Value>
+      <Value ID="OPCIRCVLTDC_MAX">Open Circuit Voltage (DC) (Max)</Value>
+      <Value ID="PSY-TL-DE">System Power On TL-D ECO</Value>
+      <Value ID="BATTCPCTY">Battery Capacity</Value>
+      <Value ID="NAMETYPE">Name Type</Value>
+      <Value ID="PLO-TL5HT">Power Loss On TL5 HT</Value>
+      <Value ID="WIRETYP">Wire Type</Value>
+      <Value ID="TEMPCAP_MAX">Cap-Base Temperature (Max)</Value>
+      <Value ID="INPWIRSTRP">Input wire strip length</Value>
+      <Value ID="TEMPCAP_MIN">Cap-Base Temperature (Min)</Value>
+      <Value ID="BRCLRBS">Bracket British Standard color</Value>
+      <Value ID="TSAFETY_MAX">T-Safety (Max)</Value>
+      <Value ID="SUITACCL">Suitable For Accent Lighting</Value>
+      <Value ID="IPCLASS">IP Classification</Value>
+      <Value ID="OPTE">Optical element</Value>
+      <Value ID="IGNMETHOD">Ignition Method</Value>
+      <Value ID="INRCURPEAK_MAX">Inrush Current Peak (Max)</Value>
+      <Value ID="PLO-PL-S">Power Loss On PL-S</Value>
+      <Value ID="PHC">Photocell</Value>
+      <Value ID="LLMF20000">LLMF 20000 h Rated</Value>
+      <Value ID="CVR">Optical cover/lens type</Value>
+      <Value ID="MAXONMCBC_MAX">Number Of Products On MCB (16A Type-C) (Max)</Value>
+      <Value ID="OUTWIRSTRP">Output wire strip length</Value>
+      <Value ID="TREF">Top reflector</Value>
+      <Value ID="DRVCURRENT">Driver current</Value>
+      <Value ID="DEPRUSELIF">Depreciation At Useful Lifetime</Value>
+      <Value ID="PRT-SOXE">Rated Lamp Power On SOX-E</Value>
+      <Value ID="LUMDESIGUS">Design Mean Lumens</Value>
+      <Value ID="THERMRES_MAX">Allowable Thermal Resistance At 25 °C (Max)</Value>
+      <Value ID="DIMLUMFLUX">Luminous flux at dimming</Value>
+      <Value ID="LUMPOS">Luminaire position</Value>
+      <Value ID="FOOTNOTEHID3">Footnotes HID 3</Value>
+      <Value ID="REGMETH">Regulation method</Value>
+      <Value ID="OUTHEI">Outer height</Value>
+      <Value ID="LSF20000P">LSF Preheat 20000 h Rated</Value>
+      <Value ID="PWRFCTR_MAX">Power Factor (Max)</Value>
+      <Value ID="OUTPCURR_NOM">Output Current (Nom)</Value>
+      <Value ID="PSY-CPOCDM">System Power On CPO-CDM</Value>
+      <Value ID="DIMMING">Dimming Range</Value>
+      <Value ID="REFLMAT">Reflector material</Value>
+      <Value ID="PLO-TL-DE">Power Loss On TL-D ECO</Value>
+      <Value ID="CONTYPE">Connector Type</Value>
+      <Value ID="SO-CTTD25_NOM">Color Temperature (SO) (Nom)</Value>
+      <Value ID="PRT-SON">Rated Lamp Power On SON</Value>
+      <Value ID="LEADWIRDIA_MAX">Input Wire Cross Section (Max)</Value>
+      <Value ID="PLA-TL5HT">Lamp Power On TL5 HT</Value>
+      <Value ID="LSF16000P">LSF Preheat 16000 h Rated</Value>
+      <Value ID="MAXONMCBB_MAX">Number Of Products On MCB (16A Type B) (Max)</Value>
+      <Value ID="IGNVOLT_MIN">Ignition Voltage (Min)</Value>
+      <Value ID="PPFMAIN6K">PPF Maintenance 6000 h</Value>
+      <Value ID="MAINAPPL">Main Application</Value>
+      <Value ID="UVBRADI5E">UV-B Radiation 5hr (IEC)</Value>
+      <Value ID="PSY-SOX">System Power On SOX</Value>
+      <Value ID="ENDPWRCLO">End CLO power consumption</Value>
+      <Value ID="STNDTMPMRK">Temperature Marking</Value>
+      <Value ID="GASFIL">Gas Filling</Value>
+      <Value ID="USEOUTDOOR">Suitable For Outdoor Use</Value>
+      <Value ID="WIRING">Internal wiring</Value>
+      <Value ID="CERTULREC">UL Recognized</Value>
+      <Value ID="PLBSCLRCH">Pole base color choice</Value>
+      <Value ID="TIMEIGNITE_MAX">Ignition Time (Max)</Value>
+      <Value ID="SYSTEM">System Description</Value>
+      <Value ID="PLACCCLRBS">Pole accessory British Standard color</Value>
+      <Value ID="LMAIN8000_NOM">Lumen Maintenance 8000 h (Nom)</Value>
+      <Value ID="ILCOSCODE">ILCOS Code</Value>
+      <Value ID="CONFIGINT">Configuration interface</Value>
+      <Value ID="FAILL80B50">Abrupt failure value at L80B50</Value>
+      <Value ID="ACCRAL">Accessory RAL color</Value>
+      <Value ID="PLA-TL5HE">Lamp Power On TL5 HE</Value>
+      <Value ID="COMPATDIM">Compatible dimmers</Value>
+      <Value ID="PLA-CPO">Lamp Power On CPO</Value>
+      <Value ID="CQC-MARK">CQC mark</Value>
+      <Value ID="MOUNTPOS">Mounting position</Value>
+      <Value ID="LOCKRING">Locking Ring</Value>
+      <Value ID="CAPTEMRAT">Capacitor Temperature Rating</Value>
+      <Value ID="CONSCR">Constant Current (CC)</Value>
+      <Value ID="BRCLR">Bracket color</Value>
+      <Value ID="CABLTYP">Supply cable type</Value>
+      <Value ID="CBLCAPEARH_MAX">Cable Capacity Hot Output Wires - Earth (Max)</Value>
+      <Value ID="GEAR2">Gear 2</Value>
+      <Value ID="OPTC2">Optic type 2</Value>
+      <Value ID="C-Tick">C-Tick</Value>
+      <Value ID="RUNUPTMDIM">Run-Up Time Before Dimming</Value>
+      <Value ID="DEPR1000">Depreciation At 1000 Hours</Value>
+      <Value ID="SUSPACC">Suspension accessories</Value>
+      <Value ID="PSE-MARK">PSE mark</Value>
+      <Value ID="PROFLMPSERT">Programmable Lamp Settings</Value>
+      <Value ID="CVRFINISH">Optical cover/lens finish</Value>
+      <Value ID="INITPWRCLO">Initial CLO power consumption</Value>
+      <Value ID="GLASSATT">Glasses</Value>
+      <Value ID="WIRFRM">Wireframe version</Value>
+      <Value ID="FLNGDIAM">Flange diameter</Value>
+      <Value ID="PSY-TL-D">System Power On TL-D</Value>
+      <Value ID="PRT-POWER">Rated Lamp Power</Value>
+      <Value ID="PRT-PLC">Rated Lamp Power On PL-C</Value>
+      <Value ID="PLO-TL5C">Power Loss On TL5C</Value>
+      <Value ID="EMERGACC">Emergency lighting accessories</Value>
+      <Value ID="BALFCT_MAX">Ballast Factor (Max)</Value>
+      <Value ID="ENVEEL">Energy Efficiency Label (EEL)</Value>
+      <Value ID="REGION">Regional version</Value>
+      <Value ID="LINEVHIDHP">Input Voltage (Multi-Tab)</Value>
+      <Value ID="LIFCODE">LIF Code</Value>
+      <Value ID="LEAKCURR_NOM">Earth Leakage Current (Nom)</Value>
+      <Value ID="COLCON10KH_NOM">Color Consistency 10000 h (Nom)</Value>
+      <Value ID="LEAKCURR_MAX">Earth Leakage Current (Max)</Value>
+      <Value ID="PRT-TL5C">Rated Lamp Power On TL5C</Value>
+      <Value ID="CVRSHAPE">Optical cover/lens shape</Value>
+      <Value ID="LLMF24000">LLMF 24000 h Rated</Value>
+      <Value ID="GLAREACC">Glare shielding accessories</Value>
+      <Value ID="FLNGTYP">Flange type</Value>
+      <Value ID="PLTYP">Pole type</Value>
+      <Value ID="PLA-CDM">Lamp Power On CDM</Value>
+      <Value ID="PPFMAIN12K">PPF Maintenance 12000 h</Value>
+      <Value ID="REINFORCED">Reinforced</Value>
+      <Value ID="LAMPFAM">Lamp family code</Value>
+      <Value ID="FOOTNOTEI1">Footnote Incandescent 1</Value>
+      <Value ID="SPAVAIL">Spare parts available</Value>
+      <Value ID="FIXLENGTH_MIN">Fixation point length distance (Min)</Value>
+      <Value ID="PRT-TL-D">Rated Lamp Power On TL-D</Value>
+      <Value ID="AUTORSTART">Automatic Restart</Value>
+      <Value ID="BULBMAT">Bulb Material</Value>
+      <Value ID="BEAMANGLMP_MIN">Beam Angle (Min)</Value>
+      <Value ID="SDCM">Standard deviation color matching</Value>
+      <Value ID="HOUSFIN">Housing Finish</Value>
+      <Value ID="WINDZONE">Windzone</Value>
+      <Value ID="HOTWRG">Hot Wiring</Value>
+      <Value ID="UVBARATE">UV-B/UV-A (IEC)</Value>
+      <Value ID="OUTPEAKVL_MAX">Output Peak Voltage (Max)</Value>
+      <Value ID="TWINDING_MAX">T-Winding (Max)</Value>
+      <Value ID="STRIPLEN">Wire Striplength</Value>
+      <Value ID="OUTWIRSTRP2">Output wire strip length 2</Value>
+      <Value ID="AIRH">Air-handling</Value>
+      <Value ID="PSY-PLS">System Power On PL-S</Value>
+      <Value ID="PPFMAIN4K">PPF Maintenance 4000 h</Value>
+      <Value ID="COMCODEAP">Commercial Code</Value>
+      <Value ID="MAXBALLTA">Max Ballast-Lamp Distance Tandem Wiring</Value>
+      <Value ID="OPVOLTDC">Normal Operating Voltage (DC)</Value>
+      <Value ID="LUMINT_MIN">Luminous Intensity (Min)</Value>
+      <Value ID="TCASNOM">T-case nominal</Value>
+      <Value ID="RESPVOLT">Response Voltage</Value>
+      <Value ID="AMTEMP">Ambient temperature range</Value>
+      <Value ID="CORTEMPS">Correlated Color Temperature Setting(s)</Value>
+      <Value ID="LUMFLUXTOL">Luminous flux tolerance</Value>
+      <Value ID="LMAINEOL">Lumen Maintenance At End Of Life</Value>
+      <Value ID="LSCLASS">Light source class</Value>
+      <Value ID="CTRLINT">Control interface</Value>
+      <Value ID="PEAKIGN_MIN">Ignition Peak Voltage (Min)</Value>
+      <Value ID="SPR">Scotopic/photopic lumen ratio</Value>
+      <Value ID="REFNECTEMP_MAX">Reflector Neck Temperature (Max)</Value>
+      <Value ID="KC">Knife connector</Value>
+      <Value ID="NLP">Number of light sources</Value>
+      <Value ID="PROJBRD">Projector Brand</Value>
+      <Value ID="BALFCT_NOM">Ballast Factor (Nom)</Value>
+      <Value ID="EBLF_MIN">Emergency Ballast Lumen Factor (EBLF) (Min)</Value>
+      <Value ID="OUTPPWR_NOM">Output Power (Nom)</Value>
+      <Value ID="OPTDIAM">Optic diameter</Value>
+      <Value ID="B50L70">B50L70</Value>
+      <Value ID="LI50PR_NOM">Life To 50% Failures Preheat (Nom)</Value>
+      <Value ID="IGNWSOFTIM_MAX">Ignition Switch-Off Time (Max)</Value>
+      <Value ID="LMAIN2000_MAX">Lumen Maintenance 2000 h (Max)</Value>
+      <Value ID="INPCURAC">Input current (AC)</Value>
+      <Value ID="APPLCODEGR">Application Code</Value>
+      <Value ID="PWRFCT100_NOM">Power Factor 100% Load (Nom)</Value>
+      <Value ID="TIMEIGNITE_NOM">Ignition Time (Nom)</Value>
+      <Value ID="RBEAMANGLE">Rated Beam Angle</Value>
+      <Value ID="LMPSUPVOLT">Lamp supply voltage</Value>
+      <Value ID="ALLOWWIRTA">Tandem Wiring Configuration Allowed</Value>
+      <Value ID="GEAR">Gear</Value>
+      <Value ID="TYPEDESCR_LONG">Type description - long text</Value>
+      <Value ID="WIRDIAM">Allowable Wire Diameter</Value>
+      <Value ID="FADERATEUP">Fade Up Rate</Value>
+      <Value ID="PLO-PL-T">Power Loss On PL-T</Value>
+      <Value ID="SO-CRID25_MIN">Color Rendering Index (SO) (Min)</Value>
+      <Value ID="PRODTYP">Product type</Value>
+      <Value ID="IMAX">I-max</Value>
+      <Value ID="OUTPWIRDIA_NOM">Output Wire Cross Section (Nom)</Value>
+      <Value ID="INPTAWG">Input Wire Gauge</Value>
+      <Value ID="WCSINPTERM">Input Terminal Cross Section</Value>
+      <Value ID="OUTCURRTOL_MIN">Output Current Tolerance (Min)</Value>
+      <Value ID="LSF28000">LSF 28000 h Rated</Value>
+      <Value ID="PREINTCONT">Pre-Set Integrated Controls</Value>
+      <Value ID="CIRCUITOPT">Circuit option</Value>
+      <Value ID="PWRLOSS220">Power Loss At 220 V</Value>
+      <Value ID="TESTVIBRA">Vibration Standard</Value>
+      <Value ID="CNTWRSTRP">Control wire striplength</Value>
+      <Value ID="NOMSURGCUR">Surge Current In</Value>
+      <Value ID="PLBRMTDIAM">Pole bracket mounting means diameter</Value>
+      <Value ID="LIFEYEA120">Life with 3h/day use@120V[yrs]</Value>
+      <Value ID="SOLMEFD25_MIN">Luminous Efficacy (SO) (Min)</Value>
+      <Value ID="BALL-MARK">Ball impact resistance mark</Value>
+      <Value ID="DIAG">Diagnostics</Value>
+      <Value ID="CBLCAPWIRE_MAX">Cable Capacity Output Wires Mutual (Max)</Value>
+      <Value ID="MDCOUTS_MAX">Sourcing Current (DALI) (Max)</Value>
+      <Value ID="PLA-PL-TC">Lamp Power On PL-T/C</Value>
+      <Value ID="PSY-TL5C">System Power On TL5C</Value>
+      <Value ID="PPFMAIN10K">PPF Maintenance 10000 h</Value>
+      <Value ID="LAMPFLUX">Lamp flux</Value>
+      <Value ID="DESIGNGR">Design</Value>
+      <Value ID="SCKTCODE">Socket Fit Code</Value>
+      <Value ID="PPFMAIN8K">PPF Maintenance 8000 h</Value>
+      <Value ID="STNDEMCIMM">EMC Immunity Standard</Value>
+      <Value ID="GNFL-MARK">Green Flagship mark</Value>
+      <Value ID="TEMBULB_NOM">Bulb Temperature (Nom)</Value>
+      <Value ID="LUMFLUXT50">Initial luminous flux at 50 °C</Value>
+      <Value ID="PLO-CDM">Power Loss On CDM</Value>
+      <Value ID="PLA-TL5HO">Lamp Power On TL5 HO</Value>
+      <Value ID="CTRLWIRDIA_NOM">Control Wire Cross Section (Nom)</Value>
+      <Value ID="WAVEL_MIN">Wavelength (Min)</Value>
+      <Value ID="LIFE95SURVTC">Life To 95% Survivors At T-Case Life</Value>
+      <Value ID="HOUSINGDIM">Housing Dimensions</Value>
+      <Value ID="PLODP-CDM">Power Loss On CDMe/CPO While Dimming</Value>
+      <Value ID="LAMCEL60">Lamp Current EL at ±60% power</Value>
+      <Value ID="PSY-CPO">System Power On CPO</Value>
+      <Value ID="TAMBIENT_NOM">T-Ambient (Nom)</Value>
+      <Value ID="LUMENFLUX_MIN">Luminous Flux (Min)</Value>
+      <Value ID="WCSOUTTERM">Output Terminal Cross Section</Value>
+      <Value ID="SWITCHING">Suitable for random switching</Value>
+      <Value ID="PRT-PLT">Rated Lamp Power On PL-T</Value>
+      <Value ID="LUMFLUXT35">Initial luminous flux at 35 °C</Value>
+      <Value ID="LUMEN120US">Luminous Flux Lamp @ 120V</Value>
+      <Value ID="ENGCSTYRUS">Estimated Energy Cost Per Year</Value>
+      <Value ID="UVARE100H">UV-A Radiation 100Hr (IEC)</Value>
+      <Value ID="LIFE80SURVTC">Life To 80% Survivors At T-Case Life</Value>
+      <Value ID="SSW">Separate switching</Value>
+      <Value ID="CCY60">Chrom. Coord. Y @ ±60% power</Value>
+      <Value ID="PLRTYP">Pole reducer type</Value>
+      <Value ID="LUMENFLUXS">Luminous Flux Setting(s)</Value>
+      <Value ID="CBLCAPEARH_NOM">Cable Capacity Hot Output Wires - Earth (Nom)</Value>
+      <Value ID="PSY-TL">System Power On TL</Value>
+      <Value ID="PRODLENG">Product Length</Value>
+      <Value ID="CISPR15">EMI 9 kHz ... 300 MHz</Value>
+      <Value ID="WCSBALCTC">Ballast Contact Wire Cross Section</Value>
+      <Value ID="LLMF2000">LLMF 2000 h Rated</Value>
+      <Value ID="LAMPINCL">Lamp included</Value>
+      <Value ID="LOOPTHR">Loop through function</Value>
+      <Value ID="PHOTORISK">Photobiological risk</Value>
+      <Value ID="NONRECV_MIN">Non Reclosure Voltage (Min)</Value>
+      <Value ID="PLBSCLRBS">Pole base British Standard color</Value>
+      <Value ID="PWRFACTWOC_NOM">Power Factor Without PF Compensation (Nom)</Value>
+      <Value ID="DIMPOWER">Power consumption at dimming</Value>
+      <Value ID="INPWIRSTRP2">Input wire strip length 2</Value>
+      <Value ID="OUTVOLTTOL_MIN">Output Voltage Tolerance (Min)</Value>
+      <Value ID="OPT">Optic type</Value>
+      <Value ID="XUCDM.COPY.LP_CSI_EOC8">Order code</Value>
+      <Value ID="FIXBOLT">Luminaire fixation bolts</Value>
+      <Value ID="ULINSCLASS">UL Insulation Class</Value>
+      <Value ID="LUMISTEPTM">Lumistep Dimming Time After Midpoint</Value>
+      <Value ID="COLSTABIND">Color stability index</Value>
+      <Value ID="TSAFETY_MIN">T-Safety (Min)</Value>
+      <Value ID="LCTYPNMBR">Lighting Controls Typenumber</Value>
+      <Value ID="PWRCONSRNG_NOM">Electrical Power Consumption (Nom)</Value>
+      <Value ID="CCX60">Chrom. Coord. X @ ±60% power</Value>
+      <Value ID="FIXDIAM">Fixation diameter</Value>
+      <Value ID="LIFE50FAIL_NOM">Life To 50% Failures (Nom)</Value>
+      <Value ID="LLMF8000">LLMF 8000 h Rated</Value>
+      <Value ID="OPTA">Optic type unit A</Value>
+      <Value ID="LMAIN1000_NOM">Lumen Maintenance 1000 h (Nom)</Value>
+      <Value ID="CORRECTIONFACTOR">Correction Factor</Value>
+      <Value ID="INCURWID">Inrush Current Width</Value>
+      <Value ID="LMAIN40US">Lumen Maintenance - 40% Life</Value>
+      <Value ID="MAGNET">Magnet</Value>
+      <Value ID="PLOCCDMCPO">Power Loss On CDMe/CPO</Value>
+      <Value ID="DFC_MAX">Damage Factor D/fc (Max)</Value>
+      <Value ID="BTTVGUAROPE">Battery Voltage Guaranteed Operation</Value>
+      <Value ID="INRUSHCURR">Inrush current</Value>
+      <Value ID="INPPOW_MIN">Input Power (Min)</Value>
+      <Value ID="GRTMAT">Gear tray material</Value>
+      <Value ID="MDCSINK_MAX">Sinking Current (DALI) (Max)</Value>
+      <Value ID="PRCIGN">Recommended Ignitor</Value>
+      <Value ID="XUCDM.COPY.LP_CSI_EOP_FULL_EOC">Full product code</Value>
+      <Value ID="EFFPROJAR">Effective projected area</Value>
+      <Value ID="PWRLOSS_MAX">Power Losses (Max)</Value>
+      <Value ID="SMART">Smart product</Value>
+      <Value ID="WIRGAUGE_MAX">Wire Gauge (Max)</Value>
+      <Value ID="FAILL90B50">Abrupt failure value at L90B50</Value>
+      <Value ID="LAMCUREM_NOM">Lamp Current (EM) (Nom)</Value>
+      <Value ID="TIME90LF">Lifetime to 90% luminous flux</Value>
+      <Value ID="CRINDEX_NOM">Color Rendering Index (Nom)</Value>
+      <Value ID="LI10PREL1">Life to 10% fail Preheat, EL1h</Value>
+      <Value ID="LIFE100_MIN">Nominal Lifetime (Min)</Value>
+      <Value ID="LITLEN">Lit length</Value>
+      <Value ID="OUTLEN">Outer length</Value>
+      <Value ID="EMI">EMI Standard</Value>
+      <Value ID="WIRELENGCO">Wire Length By Color</Value>
+      <Value ID="MNSVOLMIN_MIN">Minimum Mains Voltage Operation (Min)</Value>
+      <Value ID="CBLCAPEART_NOM">Cable Capacity Output Wires To Earth (Nom)</Value>
+      <Value ID="LMAIN5000_MAX">Lumen Maintenance 5000 h (Max)</Value>
+      <Value ID="RLIFETIMEH">Rated Lifetime (Hours)</Value>
+      <Value ID="RATEDPOWER_MIN">Power (Rated) (Min)</Value>
+      <Value ID="ENGCSTYR120">Estimated Energy Cost Per Year At 120V</Value>
+      <Value ID="THDEURFULL">Total harmonic distortion EUR at full load</Value>
+      <Value ID="SUPVIGN_MAX">Ignition Supply Voltage (Max)</Value>
+      <Value ID="OPTCLOSED">IP optical compartment</Value>
+      <Value ID="LIFTCAS10">Lifetime at Tcase +10 °C</Value>
+      <Value ID="XUCDM.COPY.EAN">EAN/UPC - Product</Value>
+      <Value ID="INCURWID50">Inrush Current Width To 50% Of Peak</Value>
+      <Value ID="LPHOT70">Life To 70% Photon Flux</Value>
+      <Value ID="PSY-TL5">System Power On TL5</Value>
+      <Value ID="BRPLDIAM">Bracket to pole diameter</Value>
+      <Value ID="INOM">I-nominal</Value>
+      <Value ID="IGNTEMRAT">Ignitor Temperature Rating</Value>
+      <Value ID="MAXBALLRE">Max Ballast-Lamp Distance Remote Wiring</Value>
+      <Value ID="INPUTPWR3H">Input Power 3h Battery</Value>
+      <Value ID="FIXANGLE">Fixation angle</Value>
+      <Value ID="FIXATION">Fixation type</Value>
+      <Value ID="LMAIN1000_MIN">Lumen Maintenance 1000 h (Min)</Value>
+      <Value ID="LIFTCASM10">Lifetime at Tcase -10 °C</Value>
+      <Value ID="WAVEL_NOM">Wavelength (Nom)</Value>
+      <Value ID="SPIGOTS">Spigots</Value>
+      <Value ID="PRT-TL5">Rated Lamp Power On TL5</Value>
+      <Value ID="RECYCL">Product recyclability</Value>
+      <Value ID="LSF12000">LSF 12000 h Rated</Value>
+      <Value ID="ULTEMPCODE">UL Temperature Code</Value>
+      <Value ID="OPERCOND">Operating Conditions</Value>
+      <Value ID="PROTLEVLN_MAX">Protection Level Up (L-N) At 5 kA (Max)</Value>
+      <Value ID="COLCONS">Color Consistency</Value>
+      <Value ID="INCURWOPFC">Input Current Without PF Correction</Value>
+      <Value ID="TCMODCOFF">Module Temperature Protection</Value>
+      <Value ID="FOOTNOTEI3">Footnote Incandescent 3</Value>
+      <Value ID="HUMNOISE">Hum And Noise Level</Value>
+      <Value ID="PHOSTEMP">Phosphor temperature</Value>
+      <Value ID="KOMBI">Kombipack</Value>
+      <Value ID="RATEDPOWER_NOM">Power (Rated) (Nom)</Value>
+      <Value ID="LAMCUREM_MAX">Lamp Current (EM) (Max)</Value>
+      <Value ID="PLBRANGLE">Pole main bracket orientation angle</Value>
+      <Value ID="MNSVOLTSAC">Mains Voltage Safety (AC)</Value>
+      <Value ID="FEATURE">Features</Value>
+      <Value ID="MNSVOLTOP">Mains voltage operation (DC)</Value>
+      <Value ID="SAFETYDEV">Safety device</Value>
+      <Value ID="OPCIRCVLTTST">Open Circuit Voltage Test (Volts)</Value>
+      <Value ID="BRFIXDIAM">Bracket to luminaire diameter</Value>
+      <Value ID="LAMCUR_NOM">Lamp Current (Nom)</Value>
+      <Value ID="COMPOUNDIND">Compund Indication</Value>
+      <Value ID="AVEAMTEMP">Average ambient temperature</Value>
+      <Value ID="CBLCAPEARC_NOM">Cable Capacity Cold Output Wires - Earth (Nom)</Value>
+      <Value ID="ENERGSAVPR">Energy Saving Product</Value>
+      <Value ID="BATTISOLAT">Battery Isolation Level</Value>
+      <Value ID="COUNTRY">Country version</Value>
+      <Value ID="TPINTSURF_MAX">Thermal Power At Therm Interface Surface (Max)</Value>
+      <Value ID="PRT-TL5ECO">Rated Lamp Power On TL5 ECO</Value>
+      <Value ID="LAMPTYP">Lamp type</Value>
+      <Value ID="NCS">NCS color</Value>
+      <Value ID="SYSPEM25N">System Wattage EM 25°C, Nom</Value>
+      <Value ID="OVVOLTPR400">Overvoltage Protection 400Vac</Value>
+      <Value ID="ROHS-MARK">RoHS mark</Value>
+      <Value ID="PWRLOSS_NOM">Power Losses (Nom)</Value>
+      <Value ID="GROUNDCAT">Ground category</Value>
+      <Value ID="INPCUR_MAX">Input Current (Max)</Value>
+      <Value ID="LLMF6000">LLMF 6000 h Rated</Value>
+      <Value ID="HIPOTTE2SE">Hipot Test (2 Seconds)</Value>
+      <Value ID="PLA-TL-D">Lamp Power On TL-D</Value>
+      <Value ID="POWEREQUIV">Wattage Equivalent</Value>
+      <Value ID="LMAIN10000_NOM">Lumen Maintenance 10000 h (Nom)</Value>
+      <Value ID="THRDHD">Third hamonic distortion</Value>
+      <Value ID="PLCPTYP">Pole cap type</Value>
+      <Value ID="RAL">RAL color</Value>
+      <Value ID="FOOTNOTEI2">Footnote Incandescent 2</Value>
+      <Value ID="TSTORAGE_MAX">T-Storage (Max)</Value>
+      <Value ID="TIMRUNMA_MAX">Run Time (Max)</Value>
+      <Value ID="RELHUMID_MAX">Relative Humidity (Operation) (Max)</Value>
+      <Value ID="PLBRMT">Pole bracket mounting means</Value>
+      <Value ID="WIDTH">Width</Value>
+      <Value ID="LUMFLUX">Initial luminous flux (system flux)</Value>
+      <Value ID="TYPEVERSGR">Type Version</Value>
+      <Value ID="DIMMABLE">Dimmable</Value>
+      <Value ID="LIFE50FAIL_MAX">Life To 50% Failures (Max)</Value>
+      <Value ID="ECCENTRIC_MAX">Eccentricity (Max)</Value>
+      <Value ID="PLA-SON">Lamp Power On SON</Value>
+      <Value ID="HOUSCONF">Housing configuration</Value>
+      <Value ID="COR_CHAR_OUT_LUM_PROF">COR_CHAR_OUT_LUM_PROF</Value>
+      <Value ID="FLAM-MARK">Flammability mark</Value>
+      <Value ID="PLBRMTHT">Pole bracket mounting means height</Value>
+      <Value ID="TIGNITION_MAX">T-Ignition (Max)</Value>
+      <Value ID="PLA-TL">Lamp Power On TL</Value>
+      <Value ID="LAMCRU_NOM">Lamp Current Run-Up (Nom)</Value>
+      <Value ID="GEOMETRY">Geometry</Value>
+      <Value ID="LUMEFFY">Initial LED luminaire efficacy</Value>
+      <Value ID="SO-CCXD25_MAX">Chromaticity Coordinate X (SO) (Max)</Value>
+      <Value ID="TYPNBR">Type number</Value>
+      <Value ID="PLO-TL-D">Power Loss On TL-D</Value>
+      <Value ID="LUMFLUXRAT_NOM">Luminous Flux (Rated) (Nom)</Value>
+      <Value ID="OCSO">Output Current Set Options</Value>
+      <Value ID="LAMCUR_MAX">Lamp Current (Max)</Value>
+      <Value ID="BLACKOUTRF">Blackout Resistance Function</Value>
+      <Value ID="PLO-TL5">Power Loss On TL5</Value>
+      <Value ID="CRINDEX_MAX">Color Rendering Index (Max)</Value>
+      <Value ID="BRANGLE">Bracket tilt angle</Value>
+      <Value ID="BALLTYPE">Ballast Type</Value>
+      <Value ID="FILDIMEN">Filament Dimensions WxH</Value>
+      <Value ID="INTTILT">Internal tilt</Value>
+      <Value ID="BALFCT_MIN">Ballast Factor (Min)</Value>
+      <Value ID="PLRVERSION">Pole reducer version</Value>
+      <Value ID="LVOLT_MIN">Voltage (Min)</Value>
+      <Value ID="PRT-PLTC">Rated Lamp Power On PL-T/C</Value>
+      <Value ID="CABLLENGTH">Supply cable length</Value>
+      <Value ID="LEADWIRDIA_MIN">Input Wire Cross Section (Min)</Value>
+      <Value ID="HUMCOND">Humidity Standard</Value>
+      <Value ID="PLA-CPOCDM">Lamp Power On CPO-CDM</Value>
+      <Value ID="OPCONAR">Optics Contact Area</Value>
+      <Value ID="PLA-PL-T">Lamp Power On PL-T</Value>
+      <Value ID="PSY-TL5HT">System Power On TL5 HT</Value>
+      <Value ID="SECFUS">Secondary Fusing</Value>
+      <Value ID="PPF">Photosynthetic Photon Flux (PPF)</Value>
+      <Value ID="REFLFIN">Reflector Finish</Value>
+      <Value ID="PLO-TL5HO">Power Loss On TL5 HO</Value>
+      <Value ID="GEARBRD">Gear brand</Value>
+      <Value ID="GLMAT">Gland material</Value>
+      <Value ID="DLL">Decorative spill-light</Value>
+      <Value ID="IGNWSOFTIM_NOM">Ignition Switch-Off Time (Nom)</Value>
+      <Value ID="PLO-PL-L">Power Loss On PL-L</Value>
+      <Value ID="CBLCAPEART_MAX">Cable Capacity Output Wires To Earth (Max)</Value>
+      <Value ID="SO-CCYD25_NOM">Chromaticity Coordinate Y (SO) (Nom)</Value>
+      <Value ID="OUTPOWSEL">Output power selection</Value>
+      <Value ID="FAILRATE">Driver failure rate at 5000 h</Value>
+      <Value ID="HOUSMAT">Housing Material</Value>
+      <Value ID="CAPDIAOVDI">Capacitor Diameter/Oval Dimensions</Value>
+      <Value ID="MNSVOLTPF">Mains voltage performance (DC)</Value>
+      <Value ID="LMAIN8000_MIN">Lumen Maintenance 8000 h (Min)</Value>
+      <Value ID="ENERCONS">Energy Consumption kWh/1000 h</Value>
+      <Value ID="INPPOW_NOM">Input Power (Nom)</Value>
+      <Value ID="EEI">Energy Efficiency Index</Value>
+      <Value ID="CRI">Init. Color Rendering Index</Value>
+      <Value ID="LIHR3PSUS">Life 3-Hr Program Start [Hrs]</Value>
+      <Value ID="NOTE">Note</Value>
+      <Value ID="LSF4000P">LSF Preheat 4000 h Rated</Value>
+      <Value ID="PRT-TL5HO">Rated Lamp Power On TL5 HO</Value>
+      <Value ID="SURF76">Surface area at 76 degrees</Value>
+      <Value ID="LUMINT_NOM">Luminous Intensity (Nom)</Value>
+      <Value ID="LMEFFPW_NOM">Luminous Efficacy (rated) (Nom)</Value>
+      <Value ID="DISTRIB">Distributor</Value>
+      <Value ID="MS">Master-slave unit</Value>
+      <Value ID="COLTEMP">Init. Corr. Color Temperature</Value>
+      <Value ID="NLP2">Number of light sources 2</Value>
+      <Value ID="MAXCBLLENH">Cable Length Hot Wiring</Value>
+      <Value ID="DEFOUTCUR">Default output current</Value>
+      <Value ID="MAXONMCBC_NOM">Number Of Products On MCB (16A Type-C) (Nom)</Value>
+      <Value ID="COLINPTERM">Color Input Terminals</Value>
+      <Value ID="NOMLENUS">Nominal Length (Inch)</Value>
+      <Value ID="CONTYPEOUT">Connector Type Output Terminals</Value>
+      <Value ID="PWRLOSS127">Power Loss At 127 V</Value>
+      <Value ID="LC">Embedded control</Value>
+      <Value ID="OUTVOLTTOL_MAX">Output Voltage Tolerance (Max)</Value>
+      <Value ID="CERTIFICATION-MARKS">Certifications</Value>
+      <Value ID="POWERTOL">Power consumption tolerance</Value>
+      <Value ID="ALLOWWIRRE">Remote Wiring Configuration Allowed</Value>
+      <Value ID="HIPOTTE1MI">Hipot Test (1 Minute)</Value>
+      <Value ID="OUTPWIRLEN">Output Wire Length</Value>
+      <Value ID="SURFACE85">Surface 85</Value>
+      <Value ID="PLCOAT">Pole coating</Value>
+      <Value ID="CLRCH">Color choice</Value>
+      <Value ID="TIMEIGNITE_MIN">Ignition Time (Min)</Value>
+      <Value ID="CTRLWIRLEN">Control Wire Length</Value>
+      <Value ID="PLODP-SON">Power Loss On SON While Dimming</Value>
+      <Value ID="TCASEMAX_NOM">T-Case Maximum (Nom)</Value>
+      <Value ID="LSF16000">LSF 16000 h Rated</Value>
+      <Value ID="HOUSGEOTYPE">Housing Geo Type</Value>
+      <Value ID="HEIGHT">Height</Value>
+      <Value ID="PLA-TL-DE">Lamp Power On TL-D ECO</Value>
+      <Value ID="WUT60PCLO_MAX">Warm Up Time To 60% Light (Max)</Value>
+      <Value ID="LIFE10FAIL_NOM">Life To 10% Failures (Nom)</Value>
+      <Value ID="STARTTIME_MAX">Starting Time (Max)</Value>
+      <Value ID="LIHR12ISUS">Life 12-Hr Instant Start [Hrs]</Value>
+      <Value ID="SO-CTTD25_MAX">Color Temperature (SO) (Max)</Value>
+      <Value ID="LMEFFPW_MAX">Luminous Efficacy (rated) (Max)</Value>
+      <Value ID="DESA-MARK">Design Award Winner mark</Value>
+      <Value ID="PRIMFUS">Primary Fusing</Value>
+      <Value ID="AUXOUTNON">Auxiliary output non-isolated</Value>
+      <Value ID="COLCOD">Color Code</Value>
+      <Value ID="PRT-CDM">Rated Lamp Power On CDM</Value>
+      <Value ID="CONWATTDEV">Constant Wattage Deviation</Value>
+      <Value ID="WEEE-MARK">WEEE mark</Value>
+      <Value ID="CAPCATNUM">Capacitor Catalog Number</Value>
+      <Value ID="COLCON0H">Color Consistency Initial</Value>
+      <Value ID="FCC-MARK">FCC mark</Value>
+      <Value ID="EXPCLS">Explosion hazard class</Value>
+      <Value ID="MATERIAL">Material</Value>
+      <Value ID="OPTEFF">Optical Efficiency</Value>
+      <Value ID="PEFFUV">Specific Eff. Radiant Power</Value>
+      <Value ID="CALC_HEIGHT_WIDTH_DEPTH">Dimensions (Height x Width x Depth)</Value>
+      <Value ID="TYPDESCR">Type description</Value>
+      <Value ID="COLOUTTERM">Color Output Terminals</Value>
+      <Value ID="PLCLR">Pole color</Value>
+      <Value ID="WINDFCTR">Wind factor</Value>
+      <Value ID="CTRLWIRDIA_MIN">Control Wire Cross Section (Min)</Value>
+      <Value ID="LIFEL50T25">Life to 50% init flux at 25 °C</Value>
+      <Value ID="PFOIL">Protection foil</Value>
+      <Value ID="STEP.MARM.UMREZ.CAS">Numerator - Packs per outer box</Value>
+      <Value ID="LMAIN12000_MIN">Lumen Maintenance 12000 h (Min)</Value>
+      <Value ID="PSY-TL5ECO">System Power On TL5 ECO</Value>
+      <Value ID="MAXDIMLVL">Maximum dim level</Value>
+      <Value ID="CRINDEX_MIN">Color Rendering Index (Min)</Value>
+      <Value ID="BASEMOD">Base Model</Value>
+      <Value ID="VOLTINPDC">Input Voltage (DC)</Value>
+      <Value ID="PSY-PL-L">System Power On PL-L</Value>
+      <Value ID="remark_text">Remarks</Value>
+      <Value ID="Product.Brand">Brand</Value>
+      <Value ID="TRUNKLGTH">Trunking length</Value>
+      <Value ID="DIMMPEROP">Dimming Period Option</Value>
+      <Value ID="LSF2000">LSF 2000 h Rated</Value>
+      <Value ID="CCX_NOM">Chromaticity Coordinate X (Nom)</Value>
+      <Value ID="OUTPISOLTN">Output Insulation</Value>
+      <Value ID="TEMPINCH_MIN">Pinch Temperature (Min)</Value>
+      <Value ID="TIMEREIGM_NOM">Re-Ignition Time (Min) (Nom)</Value>
+      <Value ID="UL-MARK">UL mark</Value>
+      <Value ID="LUMFLUXRAT_MIN">Luminous Flux (Rated) (Min)</Value>
+      <Value ID="FOOTNOTEF2">Footnotes Fluorescent/CFL 2</Value>
+      <Value ID="STNDPERFMC">Performance Standard</Value>
+      <Value ID="LAMPPOS">Lamp position</Value>
+      <Value ID="LIFEHR12US">Life 12-Hr Start [Hrs]</Value>
+      <Value ID="IECCAT">IEC Category</Value>
+      <Value ID="LAMPEL25BN">Wattage EL 25°C base up, Nom.</Value>
+      <Value ID="CAPTOP_MAX">Capacity Tolerance (Max)</Value>
+      <Value ID="EFF320DO">UV Effective Power 320nm</Value>
+      <Value ID="OPTB">Optic type unit B</Value>
+      <Value ID="LSTYPE">Light source type</Value>
+      <Value ID="PWRCONSRNG_MIN">Electrical Power Consumption (Min)</Value>
+      <Value ID="STBLMPOPER">Stable Lamp Operation Temperature</Value>
+      <Value ID="12VOUTPUT">12V Output</Value>
+      <Value ID="PPFMAIN2K">PPF Maintenance 2000 h</Value>
+      <Value ID="ACCCLR">Accessory color</Value>
+      <Value ID="FS">Electrical circuit protection</Value>
+      <Value ID="PLA-PL-C">Lamp Power On PL-C</Value>
+      <Value ID="LEADWIRDIA2">Input Wire Cross Section (Nom) 2</Value>
+      <Value ID="SKEWNESS_MAX">Skewness (Max)</Value>
+      <Value ID="T1ESC">First Full Power Time Period Option</Value>
+      <Value ID="CORMOD">Corridor Mode</Value>
+      <Value ID="FOOTNOTEI4">Footnote Incandescent 4</Value>
+      <Value ID="LMAIN4000_MAX">Lumen Maintenance 4000 h (Max)</Value>
+      <Value ID="LPHOT90">Life To 90% Photon Flux</Value>
+      <Value ID="OVERHEAT">Overheating Protection</Value>
+      <Value ID="WCSCTRTERM">Control Input Terminal Cross Section</Value>
+      <Value ID="UVBRADIAE">UV-B Radiation 100 hr (IEC)</Value>
+      <Value ID="RFI55022">EMI 30 MHz ... 1000 MHz</Value>
+      <Value ID="LUMFLUXT15">Initial luminous flux at 15 °C</Value>
+      <Value ID="CIRCUITTYP">Circuit Type</Value>
+      <Value ID="LAMCSPAN">Lamp Current Span</Value>
+      <Value ID="LIFEUSE_NOM">Useful Life (Nom)</Value>
+      <Value ID="RAPACTFU">Rapid Acting HBC Fuse</Value>
+      <Value ID="CRESTFCTOR_MAX">Crestfactor (Max)</Value>
+      <Value ID="LINEFREQ">Input Frequency</Value>
+      <Value ID="LLMF16000">LLMF 16000 h Rated</Value>
+      <Value ID="WUT60PCLO_MIN">Warm Up Time To 60% Light (Min)</Value>
+      <Value ID="TRUNKSPOT">Spots on trunking</Value>
+      <Value ID="MINUNIDIST">Minimum uniform lighting distance</Value>
+      <Value ID="BATTVIGN">Battery Voltage Lamp Ignition</Value>
+      <Value ID="BCKUPFUSE">Required Back-Up Fuse</Value>
+      <Value ID="CLS">Protection class IEC</Value>
+      <Value ID="LUMCAT">Lumen Category</Value>
+      <Value ID="CMP">Compensation circuit</Value>
+      <Value ID="RIPPCURR_NOM">Output Current Ripple (Nom)</Value>
+      <Value ID="INPOWANSI">Input power (ANSI)</Value>
+      <Value ID="RDDA-MARK">Reddot Design Award Winner mark</Value>
+      <Value ID="PLACDMECPO">Lamp Power On CDMe/CPO</Value>
+      <Value ID="OUTPWIRDIA_MAX2">Output Wire Cross Section (Max) 2</Value>
+      <Value ID="LIFE100_NOM">Nominal Lifetime (Nom)</Value>
+      <Value ID="TIMEREIGM_MAX">Re-Ignition Time (Min) (Max)</Value>
+      <Value ID="BATTCHCURR_MAX">Battery Charge Current (Max)</Value>
+      <Value ID="TIMEPRHEAT">Preheat Time</Value>
+      <Value ID="SRGPROT">Surge Protection (Common/Differential)</Value>
+      <Value ID="CONSVT">Constant Voltage (CV)</Value>
+      <Value ID="BATTVBURN">Battery Voltage Lamp Operation</Value>
+      <Value ID="STRIK3KA">Strikes At 3 kA (Common/Differential)</Value>
+      <Value ID="GLDIM">Gland for dimming signal</Value>
+      <Value ID="OPTACC">Optic accessory type</Value>
+      <Value ID="MAXCBLLEN">Cable Length From Device To Lamp</Value>
+      <Value ID="HOUSFORM">Housing form factor</Value>
+      <Value ID="LIFEHR3US">Life 3-Hr Start [Hrs]</Value>
+      <Value ID="PRT-TL5HE">Rated Lamp Power On TL5 HE</Value>
+      <Value ID="MECHACC">Mechanical accessories</Value>
+      <Value ID="WARRANTY">Warranty period</Value>
+      <Value ID="LAMPFAM2">Lamp family code 2</Value>
+      <Value ID="BEAMANGT_MIN">Beam Angle Technical (Min)</Value>
+      <Value ID="LIFE10FAIL_MIN">Life To 10% Failures (Min)</Value>
+      <Value ID="NUNITA">Number of units A</Value>
+      <Value ID="THDIEC_NOM">Total Harmonic Distortion IEC (Nom)</Value>
+      <Value ID="OUTPPWR_MAX">Output Power (Max)</Value>
+      <Value ID="SUITFIXCLS">Suitable for fixture protection class</Value>
+      <Value ID="SO-CTTD25_MIN">Color Temperature (SO) (Min)</Value>
+      <Value ID="ISOLCLASS">Isolation Classification</Value>
+      <Value ID="TCASELIFE_MAX">T-Case Lifetime (Max)</Value>
+      <Value ID="LEADWIRDIA_MIN2">Input Wire Cross Section (Min) 2</Value>
+      <Value ID="WINDSPEED">Windspeed</Value>
+      <Value ID="OUTPWIRDIA_MIN2">Output Wire Cross Section (Min) 2</Value>
+      <Value ID="ALLOWWIRTH">Through Wiring Configuration Allowed</Value>
+      <Value ID="SAFBR">Safety bracket</Value>
+      <Value ID="LSF2000P">LSF Preheat 2000 h Rated</Value>
+      <Value ID="APPMARK">Approval Marks</Value>
+      <Value ID="LIFESERV">Lifecycle services</Value>
+      <Value ID="REGLEVEL">Regulating Level</Value>
+      <Value ID="LIHR3ISUS">Life 3-Hr Instant Start [Hrs]</Value>
+      <Value ID="RTLMPPWRGR">Rated Ballast-Lamp Power</Value>
+      <Value ID="LMAIN12000_MAX">Lumen Maintenance 12000 h (Max)</Value>
+      <Value ID="MEASUREMENTEFFICIENCY">Measurement Efficiency</Value>
+      <Value ID="LUMFLRS">Luminous Flux in 90° Cone (Rated) Setting(s)</Value>
+      <Value ID="LUMENFLX90">Luminous Flux In 90° Cone (Rated)</Value>
+      <Value ID="BRTYP">Bracket type</Value>
+      <Value ID="LEDSHAPE">Shape</Value>
+      <Value ID="LDISTR">Light Distribution</Value>
+      <Value ID="PSDIMOPT">Pre-set Dimming option</Value>
+      <Value ID="SYSDESCR">Lamp system description</Value>
+      <Value ID="PLO-SON">Power Loss On SON</Value>
+      <Value ID="LAMPHLDR">Lamp holder</Value>
+      <Value ID="BEAMANGT_MAX">Beam Angle Technical (Max)</Value>
+      <Value ID="MNSVOLTPAC">Mains Voltage Performance (AC)</Value>
+      <Value ID="ULR">Upward light output ratio</Value>
+      <Value ID="NUNITB">Number of units B</Value>
+      <Value ID="LLMF12000">LLMF 12000 h Rated</Value>
+      <Value ID="LAMPFLUXTOTAL">Total Lamp Flux</Value>
+      <Value ID="IGN">Ignitor</Value>
+      <Value ID="BALLUMEF">Ballast luminous efficiency</Value>
+      <Value ID="LIFEL70B50">Median useful life L70B50</Value>
+      <Value ID="LVOLT_NOM">Voltage (Nom)</Value>
+      <Value ID="PLA-PL-S">Lamp Power On PL-S</Value>
+      <Value ID="BRCPTYP">Bracket (side) cap type</Value>
+      <Value ID="INPUTPWR1H">Input Power 1h Battery</Value>
+      <Value ID="ANSICODEHAL">ANSI Code Halogen</Value>
+      <Value ID="LMAIN5000_NOM">Lumen Maintenance 5000 h (Nom)</Value>
+      <Value ID="FIXLENGTH_NOM">Fixation point length distance (Nom)</Value>
+      <Value ID="GLMAI">Gland for mains supply</Value>
+      <Value ID="LUMEN">Light source flux</Value>
+      <Value ID="PFCUNITA">Product family code unit A</Value>
+      <Value ID="PWRCONSRNG_MAX">Electrical Power Consumption (Max)</Value>
+      <Value ID="INPPOW_MAX">Input Power (Max)</Value>
+      <Value ID="THDUSA">Total Harmonic Distortion USA</Value>
+      <Value ID="BATTCHTIME">Battery Charge Time</Value>
+      <Value ID="BEAMANGLMP_NOM">Beam Angle (Nom)</Value>
+      <Value ID="PLODP-CDO">Power Loss On CDO While Dimming</Value>
+      <Value ID="RTLMPTYPGR">Lamp Type</Value>
+      <Value ID="LIFEL70T50">Life to 70% init flux at 50 °C</Value>
+      <Value ID="INPCURDC">Input current (DC)</Value>
+      <Value ID="RECFUSE">Recommended Fuse Value</Value>
+      <Value ID="PLA-PL-L">Lamp Power On PL-L</Value>
+      <Value ID="SPACING">Spacing module</Value>
+      <Value ID="PPFMAIN5K">PPF Maintenance 5000 h</Value>
+      <Value ID="PSY-PLT">System Power On PL-T</Value>
+      <Value ID="LMAIN12000_NOM">Lumen Maintenance 12000 h (Nom)</Value>
+      <Value ID="PWRFACTWOC_MIN">Power Factor Without PF Compensation (Min)</Value>
+      <Value ID="IKC">Mech. impact protection code</Value>
+      <Value ID="PROGDIMMOP">Programmable Dimming Options</Value>
+      <Value ID="AVEPWRCLO">Average CLO power consumption</Value>
+      <Value ID="LMPPWRTOL">Lamp Power Tolerance</Value>
+      <Value ID="REFLATT">Reflectors</Value>
+      <Value ID="SO-CCXD25_NOM">Chromaticity Coordinate X (SO) (Nom)</Value>
+      <Value ID="ILLUM">Illuminance</Value>
+      <Value ID="LIFEUSE_MAX">Useful Life (Max)</Value>
+      <Value ID="SECSHCIRCU">Secondary Short Circuit Current</Value>
+      <Value ID="CONTYPECTR">Connector Type Control Input Terminals</Value>
+      <Value ID="LIHR12PSUS">Life 12-Hr Programstart [Hrs]</Value>
+      <Value ID="TIMRUN90_MAX">Run-Up Time 90% (Max)</Value>
+      <Value ID="TIMRUN90_MIN">Run-Up Time 90% (Min)</Value>
+      <Value ID="BEAMANGLMP_MAX">Beam Angle (Max)</Value>
+      <Value ID="MAXLMPWR">Maximum lamp power</Value>
+      <Value ID="LAMPFOOT">Lamp Footage</Value>
+      <Value ID="DELTATNOM">Delta-T Normal Conditions</Value>
+      <Value ID="LMAIN50000_MIN">Lumen Maintenance 50000 h (Min)</Value>
+      <Value ID="CORTEMP_MIN">Correlated Color Temperature (Min)</Value>
+      <Value ID="PLA-TL5C">Lamp Power On TL5C</Value>
+      <Value ID="LSF6000P">LSF Preheat 6000 h Rated</Value>
+      <Value ID="NTCRESTHR">NTC resistance threshold</Value>
+      <Value ID="PSY-CDO">System Power On CDO</Value>
+      <Value ID="LUMFLUXT45">Initial luminous flux at 45 °C</Value>
+      <Value ID="LENGTH">Length</Value>
+      <Value ID="STEP.MARA.MATNR">Material Nr. (12NC)</Value>
+      <Value ID="SOLMEFD25_NOM">Luminous Efficacy (SO) (Nom)</Value>
+      <Value ID="PET_NOM">Pet (Niosh) (Nom)</Value>
+      <Value ID="PLO-CPOCDM">Power Loss On CPO-CDM</Value>
+      <Value ID="CONTYPEINP">Connector Type Input Terminals</Value>
+      <Value ID="LUMCLASS">Luminaire Class Suitability</Value>
+      <Value ID="RECNTC">Recommended NTC type</Value>
+      <Value ID="FAILL70B50">Abrupt failure value at L70B50</Value>
+      <Value ID="ENVHGCONT_MAX">Mercury (Hg) Content (Max)</Value>
+      <Value ID="BEAMANGLE">Beam angle of light source</Value>
+      <Value ID="LM100KT25">Lumen maintenance at useful life of 100,000 h, at 25 °C</Value>
+      <Value ID="LIFEUSE_MIN">Useful Life (Min)</Value>
+      <Value ID="PLTOPTUBE">Pole top inner tube</Value>
+      <Value ID="LMEFFPW_MIN">Luminous Efficacy (rated) (Min)</Value>
+      <Value ID="FIXMAT">Fixation material</Value>
+      <Value ID="PRT-CPOCDM">Rated Lamp Power On CPO-CDM</Value>
+      <Value ID="COLLAMP">Light source color</Value>
+      <Value ID="NPSADAPT">NPS adapter</Value>
+      <Value ID="TAMBIENT_MIN">T-Ambient (Min)</Value>
+      <Value ID="FIXLENGTH_MAX">Fixation point length distance (Max)</Value>
+      <Value ID="TIMRUN90_NOM">Run-Up Time 90% (Nom)</Value>
+      <Value ID="PLCLRCH">Pole color choice</Value>
+      <Value ID="VIS_TOBE_GEN">Visuals to be Generated</Value>
+      <Value ID="TEMPDESIGN_MIN">Design Temperature (Min)</Value>
+      <Value ID="LAMPEFFY">Lamp efficacy</Value>
+      <Value ID="CONN">Connection</Value>
+      <Value ID="ANSICODE">ANSI Code</Value>
+      <Value ID="ANBTYP">Anchor bolt type</Value>
+      <Value ID="EFFRANGMA">Maximum Efficiency</Value>
+      <Value ID="OPTC">Optic type outdoor</Value>
+      <Value ID="COLDESIG">Color Designation</Value>
+      <Value ID="INCUROPECI">Input Current (Open Circuit)</Value>
+      <Value ID="PLO-SOXE">Power Loss On SOX-E</Value>
+      <Value ID="CCY_MAX">Chromaticity Coordinate Y (Max)</Value>
+      <Value ID="PLSHAPE">Pole shape</Value>
+      <Value ID="CAP">Capacitor</Value>
+      <Value ID="LIFE50LUM">Life To 50% Lumen Maintenance</Value>
+      <Value ID="STNDSAFETY">Safety Standard</Value>
+      <Value ID="DUPLICODE">Duplication code</Value>
+      <Value ID="EL">Emergency lighting</Value>
+      <Value ID="DALSTAND">DALI Standard</Value>
+      <Value ID="LIFE5FAIL_MAX">Life To 5% Failures (Max)</Value>
+      <Value ID="FIXPTDIST">Flange fixation point distance</Value>
+      <Value ID="TEMPDESIGN_NOM">Design Temperature (Nom)</Value>
+      <Value ID="FIXCLR">Fixation color</Value>
+      <Value ID="LUMENFLUX_MAX">Luminous Flux (Max)</Value>
+      <Value ID="TOTLENGTH">Overall length</Value>
+      <Value ID="PHILCODE">Philips Code</Value>
+      <Value ID="OPFREQ_MAX">Operating Frequency (Max)</Value>
+      <Value ID="THDEUR127_MAX">Total Harmonic Distortion EUR At 127 V (Max)</Value>
+      <Value ID="CCX_MIN">Chromaticity Coordinate X (Min)</Value>
+      <Value ID="FILTER">Filters and lenses</Value>
+      <Value ID="LIFE10FAIL_MAX">Life To 10% Failures (Max)</Value>
+      <Value ID="TESTBUMP">Bumps Standard</Value>
+      <Value ID="PLO-TL5ECO">Power Loss On TL5 ECO</Value>
+      <Value ID="PRT-CDO">Rated Lamp Power On CDO</Value>
+      <Value ID="IPV">Ingress protection code</Value>
+      <Value ID="MENTPOW_MAX">Maximum Engine Thermal Power (Max)</Value>
+      <Value ID="PLO-CDO">Power Loss On CDO</Value>
+      <Value ID="CANDELA">On-axis intensity in candela</Value>
+      <Value ID="LI50PR_MAX">Life To 50% Failures Preheat (Max)</Value>
+      <Value ID="PULSEVOLT_MIN">Pulse Voltage (Min)</Value>
+      <Value ID="SOLUMFD25_MIN">Luminous Flux (SO) (Min)</Value>
+      <Value ID="LLMFENDL_NOM">LLMF At End Of Nominal Lifetime (Nom)</Value>
+      <Value ID="LSF4000">LSF 4000 h Rated</Value>
+      <Value ID="FAILL80B10">Abrupt failure value at L80B10</Value>
+      <Value ID="WCSALFADS">Auto Insert (ALF/ADS) Wire Cross Section</Value>
+      <Value ID="LEDTECH">Technical Type</Value>
+      <Value ID="CLRP">Parts color</Value>
+      <Value ID="PSY-TL5HO">System Power On TL5 HO</Value>
+      <Value ID="RIPPCURR_MAX">Output Current Ripple (Max)</Value>
+      <Value ID="CBLCAPWIRE_NOM">Cable Capacity Output Wires Mutual (Nom)</Value>
+      <Value ID="LSF30000">LSF 30000 h Rated</Value>
+      <Value ID="LAMCUR_MIN">Lamp Current (Min)</Value>
+      <Value ID="LMAIN4000_MIN">Lumen Maintenance 4000 h (Min)</Value>
+      <Value ID="TCSWITCHOF_NOM">T-Case Switch Off (Nom)</Value>
+      <Value ID="FINISH">Finish</Value>
+      <Value ID="INPCUR_NOM">Input Current (Nom)</Value>
+      <Value ID="HOUS">Housing</Value>
+      <Value ID="CW">Counterweight</Value>
+      <Value ID="PLSTEPS">Pole steps and platform</Value>
+      <Value ID="NGR">Number of gear units</Value>
+      <Value ID="SRTCIRC">Short Circuit Protection</Value>
+      <Value ID="ILIFE">I-life</Value>
+      <Value ID="CCX_MAX">Chromaticity Coordinate X (Max)</Value>
+      <Value ID="STRT">Starter</Value>
+      <Value ID="LUMINT_MAX">Luminous Intensity (Max)</Value>
+      <Value ID="CONWACM">Consumed Watt Per Centimeter</Value>
+      <Value ID="WIRINS">Wire insulation</Value>
+      <Value ID="RELHUMID_NOM">Relative Humidity (Operation) (Nom)</Value>
+      <Value ID="CEILACC">Ceiling mounting accessories</Value>
+      <Value ID="CLRFRM">Colored frame</Value>
+      <Value ID="LIFE20FAIL_MAX">Life To 20% Failures (Max)</Value>
+      <Value ID="LMAIN2000_NOM">Lumen Maintenance 2000 h (Nom)</Value>
+      <Value ID="PWRFACTWOC_MAX">Power Factor Without PF Compensation (Max)</Value>
+      <Value ID="ENRGYC24">California title 24</Value>
+      <Value ID="FAMNAME">Family name</Value>
+      <Value ID="WUT60PCLO_NOM">Warm Up Time To 60% Light (Nom)</Value>
+      <Value ID="TOTHEIGHT">Overall height</Value>
+      <Value ID="PWRFCT100_MAX">Power Factor 100% Load (Max)</Value>
+      <Value ID="ECON-MARK">Economy mark</Value>
+      <Value ID="STNDQUALIT">Quality Standard</Value>
+      <Value ID="FANINCL">Fan included</Value>
+      <Value ID="LUMHEIGHT">Luminaire mounting height</Value>
+      <Value ID="ELCPOWCNS">Electrical power consumption</Value>
+      <Value ID="THDIEC_MAX">Total Harmonic Distortion IEC (Max)</Value>
+      <Value ID="CRINDEX4H_NOM">Color Rendering Index at 4h (Nom)</Value>
+      <Value ID="POWERFD50_MIN">Power Factor 50% Load (Min)</Value>
+      <Value ID="PRT-TL">Rated Lamp Power On TL</Value>
+      <Value ID="PLTBRHGHT">Pole bracket height from top</Value>
+      <Value ID="CONTRWIRGA">Control Wire Gauge</Value>
+      <Value ID="PLA-CDO">Lamp Power On CDO</Value>
+      <Value ID="BRVERSION">Bracket version</Value>
+      <Value ID="HOUSINGGR">Housing</Value>
+      <Value ID="ANGLE">Angle</Value>
+      <Value ID="OVVOLTPR276">Overvoltage Protection 276Vac</Value>
+      <Value ID="PLO-PL-TC">Power Loss On PL-T/C</Value>
+      <Value ID="SYSPOWCONS">System Power Consumption</Value>
+      <Value ID="CVRACC">Optical cover/lens type accessory</Value>
+      <Value ID="LMEFFMAXRAT_MAX">Luminous Efficacy (@ Max Lumen, Rated) (Max)</Value>
+      <Value ID="INDFAMCOD">Industrial Family Code</Value>
+      <Value ID="UNITA">Unity type A</Value>
+      <Value ID="FOOTNOTEHID1">Footnotes HID 1</Value>
+      <Value ID="STNDHARMCS">Harmonic Current Emission Standard</Value>
+      <Value ID="LUMFLUXT25">Initial luminous flux at 25 °C</Value>
+      <Value ID="HOUSCLR">Housing Color</Value>
+      <Value ID="TIMEREIGM_MIN">Re-Ignition Time (Min) (Min)</Value>
+      <Value ID="OUTCURRTOL_MAX">Output Current Tolerance (Max)</Value>
+      <Value ID="PRT-SOX">Rated Lamp Power On SOX</Value>
+      <Value ID="PLDRTYP">Pole door type</Value>
+      <Value ID="BEAMANGT">Beam Angle Technical (Nom)</Value>
+      <Value ID="TESTSURGIL">Surge Test Installation Level</Value>
+      <Value ID="CLR">Color</Value>
+      <Value ID="LI50PR_MIN">Life To 50% Failures Preheat (Min)</Value>
+      <Value ID="TEMPINCH_MAX">Pinch Temperature (Max)</Value>
+      <Value ID="STARTTIME_NOM">Starting Time (Nom)</Value>
+      <Value ID="GLWRTEST">Glow-wire test</Value>
+      <Value ID="CIRCUIT">Circuit</Value>
+      <Value ID="AUXOUTISO">Auxiliary output isolated</Value>
+      <Value ID="CBLCAPEARC_MAX">Cable Capacity Cold Output Wires - Earth (Max)</Value>
+      <Value ID="OPFREQ_MIN">Operating Frequency (Min)</Value>
+      <Value ID="INCURSTART">Input Current (Starting)</Value>
+      <Value ID="CAPREQ">Capacitor Requirements</Value>
+      <Value ID="CAPBASEI">Cap-Base Information</Value>
+      <Value ID="PLODP-CPO">Power Loss On CPO While Dimming</Value>
+      <Value ID="CEILPRFL">Ceiling profile</Value>
+      <Value ID="CENLUM">Centre luminaire</Value>
+      <Value ID="PLACC">Pole accessory type</Value>
+      <Value ID="TRW">Feed-through wiring</Value>
+      <Value ID="PRT-PLS">Rated Lamp Power On PL-S</Value>
+      <Value ID="PLO-SOX">Power Loss On SOX</Value>
+      <Value ID="MDEV">Mounting device</Value>
+      <Value ID="DLCQPL">DesignLights Consortium Qualified Product List</Value>
+      <Value ID="PLACCCLRCH">Pole accessory color choice</Value>
+      <Value ID="LOUT5SEC">Nominal Light Output After 5 Seconds</Value>
+      <Value ID="PLO-CPO">Power Loss On CPO</Value>
+      <Value ID="LAMPPOWER2">Lamp power 2</Value>
+      <Value ID="PLRDIAM">Pole reducer diameter</Value>
+      <Value ID="EMI150KHZ">EMI 150 kHz ... 1 GHz</Value>
+      <Value ID="OPCIRVAC">Open circuit voltage (AC)</Value>
+      <Value ID="PSY-PLTC">System Power On PL-T/C</Value>
+      <Value ID="OUTPTAWG">Output Wire Gauge</Value>
+      <Value ID="INCURWIPFC">Input Current With PF Correction</Value>
+      <Value ID="INFPL">Infill plate</Value>
+      <Value ID="LOUT1MIN">Nominal Light Output After 60 Seconds</Value>
+      <Value ID="LMAIN4000_NOM">Lumen Maintenance 4000 h (Nom)</Value>
+      <Value ID="TCASELIFE_NOM">T-Case Lifetime (Nom)</Value>
+      <Value ID="UNITB">Unity type B</Value>
+      <Value ID="LMAIN10000_MAX">Lumen Maintenance 10000 h (Max)</Value>
+      <Value ID="PET_MIN">Pet (Niosh) (Min)</Value>
+      <Value ID="PRTCDMECPO">Rated Lamp Power On CDMe/CPO</Value>
+      <Value ID="LOR">Light output ratio</Value>
+      <Value ID="CE-MARK">CE mark</Value>
+      <Value ID="REGLVLPWR">Regulating Level Power</Value>
+      <Value ID="TORQUE">Torque</Value>
+      <Value ID="ROOM">Room</Value>
+      <Value ID="STEP.ZRCC.CHAR.PCKCONF">SAP Packaging configuration</Value>
+      <Value ID="RELHUMID_MIN">Relative Humidity (Operation) (Min)</Value>
+      <Value ID="DIAMETER">Diameter</Value>
+      <Value ID="PSY-SON">System Power On SON</Value>
+      <Value ID="CRI60">CRI @ ±60% power</Value>
+      <Value ID="PRT-PL-L">Rated Lamp Power On PL-L</Value>
+      <Value ID="THDEURMIN">Total harmonic distortion EUR at minimum dim level</Value>
+      <Value ID="PLO-PL-C">Power Loss On PL-C</Value>
+      <Value ID="TSTORAGE_MIN">T-Storage (Min)</Value>
+      <Value ID="PRT-TL-DE">Rated Lamp Power On TL-D ECO</Value>
+      <Value ID="MINDIMLEV">Minimum Dim Level</Value>
+      <Value ID="SO-CCYD25_MAX">Chromaticity Coordinate Y (SO) (Max)</Value>
+      <Value ID="SYSCONF">System configuration</Value>
+      <Value ID="COLCON10KH_MAX">Color Consistency 10000 h (Max)</Value>
+      <Value ID="FLNGWIDTH">Flange width</Value>
+      <Value ID="ACCPFC">Accessory PFC</Value>
+      <Value ID="WORDISTAN">Working Distance WD</Value>
+      <Value ID="PKVW-MARK">Police mark for safe residing</Value>
+      <Value ID="XUCDM.COPY.DTN">Full product name</Value>
+      <Value ID="TEMBULB_MIN">Bulb Temperature (Min)</Value>
+      <Value ID="BRLENGTH">Bracket length</Value>
+      <Value ID="FILSHAPE">Filament Shape</Value>
+      <Value ID="LUMISTEPDT">Lumistep Dimming Time</Value>
+      <Value ID="APPLIC">Application</Value>
+      <Value ID="MAXCASTMP">Maximum case temperature (in case of failure)</Value>
+      <Value ID="BEAMSPRD">Luminaire light beam spread</Value>
+      <Value ID="RECDIM">Recommended dimmer list (TE)</Value>
+      <Value ID="PLXTDIAM">Pole extension diameter</Value>
+      <Value ID="NRIGNPULSE">Number Of Ignition Pulses</Value>
+      <Value ID="FOOTNOTEF1">Footnotes Fluorescent/CFL 1</Value>
+      <Value ID="PRT-CPO">Rated Lamp Power On CPO</Value>
+      <Value ID="CORTEMP_NOM">Correlated Color Temperature (Nom)</Value>
+      <Value ID="HOUSCONF2">Housing configuration 2</Value>
+      <Value ID="CCC-MARK">CCC mark</Value>
+      <Value ID="MAXSINKCUR_MAX">Sinking Current (Max)</Value>
+      <Value ID="PICLUMHRUS">Picogram Per Lumen Hour</Value>
+      <Value ID="OUTPCURR_MAX">Output Current (Max)</Value>
+      <Value ID="PSYCDMECPO">System Power On CDMe/CPO</Value>
+      <Value ID="ENEC-MARK">ENEC mark</Value>
+      <Value ID="CABCAPMAX_MAX">Cable Capacity Wires Device To Lamp (Max)</Value>
+      <Value ID="ESDSUSC">ESD susceptibility</Value>
+      <Value ID="BRTCPTYP">Bracket top cap type</Value>
+      <Value ID="TIME50LF">Lifetime to 50% luminous flux</Value>
+      <Value ID="SO-CCXD25_MIN">Chromaticity Coordinate X (SO) (Min)</Value>
+      <Value ID="LIFEL80B50">Median useful life L80B50</Value>
+      <Value ID="MOLENGUS_MAX">Overall Length (Max)</Value>
+      <Value ID="TRAFO">Driver/power unit/transformer</Value>
+      <Value ID="LAMPW120US">Lamp Wattage Rated@120V</Value>
+      <Value ID="INSTALL">Ready-to-install</Value>
+      <Value ID="EBLF_NOM">Emergency Ballast Lumen Factor (EBLF) (Nom)</Value>
+    </ListOfValue>
+    <ListOfValue ID="PublicationGroup-lov" ParentID="List Of Values group root" AllowUserValueAddition="false" UseValueID="false" Referenced="true">
+      <Name>Publication Group-lov</Name>
+      <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""/>
+      <Value>Connections</Value>
+      <Value>Control</Value>
+      <Value>Electrical</Value>
+      <Value>Certification &amp; Safety</Value>
+      <Value>Light output</Value>
+      <Value>Physical</Value>
+    </ListOfValue>
+    <ListOfValue ID="MD System of Record" ParentID="List Of Values group root" AllowUserValueAddition="false" UseValueID="false" Referenced="true">
+      <Name>MD system of record</Name>
+      <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""/>
+      <AttributeGroupLink AttributeGroupID="Meta-Data Attributes"/>
+      <Value>SAP</Value>
+      <Value>STEP</Value>
+      <Value>aDAM</Value>
+    </ListOfValue>
+  </ListsOfValues>
+
+  <AttributeGroupList>
+
+  <AttributeGroup ID="ETIM Attribute Groups" ShowInWorkbench="true" ManuallySorted="false">
+    <Name>ETIM Attributes</Name>
+    <AttributeGroup ID="ETIM Meta Attributes" ShowInWorkbench="true" ManuallySorted="false" Referenced="true">
+      <Name>ETIM Meta Attributes</Name>
+    </AttributeGroup>
+  </AttributeGroup>
+  <AttributeGroup ID="Eco.passport.Groups" ShowInWorkbench="true" ManuallySorted="false" Referenced="true">
+    <Name>Eco passport</Name>
+    <MetaData>
+      <Value AttributeID="Attribute Group Order">1</Value>
+    </MetaData>
+  </AttributeGroup>
+  <AttributeGroup ID="ETIM.V7.Attribute.Groups" ShowInWorkbench="true" ManuallySorted="false">
+    <Name>ETIM.V7.Attributes</Name>
+    <AttributeGroup ID="ETIM.V7.Meta.Attributes" ShowInWorkbench="true" ManuallySorted="false" Referenced="true">
+      <Name>ETIM.V7.Meta.Attributes</Name>
+    </AttributeGroup>
+  </AttributeGroup>
+  <AttributeGroup ID="Attributes_for_reporting" ShowInWorkbench="true" ManuallySorted="false" Referenced="true">
+    <Name>Attributes needed to create reports</Name>
+    <AttributeGroup ID="Products_Workflows_Report_Attributes" ShowInWorkbench="false" ManuallySorted="true" Referenced="true">
+      <Name>Products_Workflows_Report_Attributes</Name>
+      <AttributeSequence>
+        <AttributeLink AttributeID="STEP.MVKE.VMSTA12"/>
+        <AttributeLink AttributeID="Product.Date.Activation.EOP.Global"/>
+        <AttributeLink AttributeID="Product.Date.Activation.EOP"/>
+        <AttributeLink AttributeID="Product.Date.Activation.EOP.Global.OEM"/>
+        <AttributeLink AttributeID="Product.Date.Activation.EOP.Global.PROF"/>
+        <AttributeLink AttributeID="Product.Date.Activation.EOP.OEM"/>
+        <AttributeLink AttributeID="Product.Date.Activation.EOP.PROF"/>
+        <AttributeLink AttributeID="STEP.MARA.ZZFAMCOD"/>
+        <AttributeLink AttributeID="STEP.MVKE.VMSTA03"/>
+        <AttributeLink AttributeID="STEP.MVKE.VMSTA02"/>
+        <AttributeLink AttributeID="STEP.MVKE.VMSTA05"/>
+        <AttributeLink AttributeID="STEP.MARA.LABOR"/>
+        <AttributeLink AttributeID="STEP.MARA.MSTDE"/>
+        <AttributeLink AttributeID="STEP.MARA.MSTAE"/>
+        <AttributeLink AttributeID="Product.Date.Activation.SOP.Global"/>
+        <AttributeLink AttributeID="Product.Date.Activation.SOP"/>
+        <AttributeLink AttributeID="Product.Date.Activation.SOP.Global.OEM"/>
+        <AttributeLink AttributeID="Product.Date.Activation.SOP.Global.PROF"/>
+        <AttributeLink AttributeID="Product.Date.Activation.SOP.OEM"/>
+        <AttributeLink AttributeID="Product.Date.Activation.SOP.PROF"/>
+        <AttributeLink AttributeID="AttributeID_Name"/>
+        <AttributeLink AttributeID="Mandatory_In_Blue_Tree_Node"/>
+      </AttributeSequence>
+    </AttributeGroup>
+  </AttributeGroup>
+  <AttributeGroup ID="UserManagement" ShowInWorkbench="false" ManuallySorted="false">
+    <Name>UserManagement</Name>
+    <AttributeGroup ID="SuperUserPriviliges" ShowInWorkbench="false" ManuallySorted="false" Referenced="true">
+      <Name>SuperUserPriviliges</Name>
+    </AttributeGroup>
+    <AttributeGroup ID="PowerUserPriviliges" ShowInWorkbench="false" ManuallySorted="false">
+      <Name>PowerUserPriviliges</Name>
+      <AttributeGroup ID="PowerUserPriviligesLocal" ShowInWorkbench="false" ManuallySorted="false" Referenced="true">
+        <Name>PowerUserPriviligesLocal</Name>
+      </AttributeGroup>
+      <AttributeGroup ID="PowerUserPriviligesGlobal" ShowInWorkbench="false" ManuallySorted="false" Referenced="true">
+        <Name>PowerUserPriviligesGlobal</Name>
+      </AttributeGroup>
+    </AttributeGroup>
+  </AttributeGroup>
+  <AttributeGroup ID="Tendertext Attributes" ShowInWorkbench="true" ManuallySorted="true" Referenced="true">
+    <Name>51. Tendertext Attributes</Name>
+    <AttributeSequence>
+      <AttributeLink AttributeID="Introduction_Tendertext_CF"/>
+      <AttributeLink AttributeID="Publication_Introduction_Tendertext_FP"/>
+      <AttributeLink AttributeID="Introduction_Tendertext_FP"/>
+      <AttributeLink AttributeID="TenderTextAttributes_CF"/>
+      <AttributeLink AttributeID="Publication_TenderTextAttributes_FP"/>
+      <AttributeLink AttributeID="TenderTextAttributes_FP"/>
+      <AttributeLink AttributeID="Footer_Tendertext_FP"/>
+      <AttributeLink AttributeID="TenderText_FP"/>
+    </AttributeSequence>
+  </AttributeGroup>
+  <AttributeGroup ID="xUCDM message attributes" ShowInWorkbench="true" ManuallySorted="false" Referenced="true">
+    <Name>xUCDM message attributes</Name>
+    <MetaData>
+      <Value AttributeID="Attribute Group Order">1</Value>
+    </MetaData>
+  </AttributeGroup>
+  <AttributeGroup ID="Vocabularies" ShowInWorkbench="true" ManuallySorted="false" Referenced="true">
+    <Name>77.Vocabularies</Name>
+    <Configuration>H4sIAAAAAAAAAKWQwQ6CQAxE73zFZj9g0TuQKIgx8Wi4L1JMI+yStmj8e1cx682Lt3lpZzppthEhbGeBPfl5ahDuFfToUNA7VXsarTRAHCjXa7PSRaJU9l1hdbJ0AYkxXFq3hV2HAl2uezsw6PRtKv0wj45fOtAR3TWalpGKfKhyffNn2xrLDCKPCcwIzDZcCnoJ/CPElLWZyHcEw6dcGttl6a+XFMkTlKMVAzIBAAA=</Configuration>
+  </AttributeGroup>
+  <AttributeGroup ID="Meta-Data Attributes" ShowInWorkbench="true" ManuallySorted="false" Referenced="true">
+    <Name>Metadata Attributes</Name>
+    <AttributeGroup ID="Enterprise Metadata" ShowInWorkbench="true" ManuallySorted="false">
+      <Name>Enterprise Metadata</Name>
+      <AttributeGroup ID="Metadata for Attributes" ShowInWorkbench="true" ManuallySorted="false" Referenced="true">
+        <Name>Metadata for Attributes</Name>
+      </AttributeGroup>
+    </AttributeGroup>
+  </AttributeGroup>
+  <AttributeGroup ID="ETIM.V6.Attribute.Groups" ShowInWorkbench="true" ManuallySorted="false">
+    <Name>ETIM.V6.Attributes</Name>
+    <AttributeGroup ID="ETIM.V6.Meta.Attributes" ShowInWorkbench="true" ManuallySorted="false" Referenced="true">
+      <Name>ETIM.V6.Meta.Attributes</Name>
+    </AttributeGroup>
+  </AttributeGroup>
+  </AttributeGroupList>
+
+  <AttributeList>
+
+    <Attribute ID="MD System of Record Contact" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" Referenced="true" Mandatory="false">
+      <Name>MD System of Record Contact</Name>
+      <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""/>
+      <MetaData>
+        <Value AttributeID="AttributeID_Name">MD System of Record Contact (MD System of Record Contact)</Value>
+      </MetaData>
+      <AttributeGroupLink AttributeGroupID="SuperUserPriviliges"/>
+      <AttributeGroupLink AttributeGroupID="Meta-Data Attributes"/>
+      <AttributeGroupLink AttributeGroupID="PowerUserPriviligesLocal"/>
+      <AttributeGroupLink AttributeGroupID="PowerUserPriviligesGlobal"/>
+      <UserTypeLink UserTypeID="Technical Product"/>
+      <UserTypeLink UserTypeID="stibo.normalattribute"/>
+      <UserTypeLink UserTypeID="Final Product"/>
+    </Attribute>
+
+    <Attribute ID="ValidIn" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" Referenced="true" Mandatory="false">
+      <Name>Valid In Blue Tree:</Name>
+      <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="10000" InputMask=""/>
+      <MetaData>
+        <Value AttributeID="Enterprise description">This shows where the attribute is valid in the blue tree, after running the attribute with bulkupdate BusinessRule: UpdateValidityInformationOnAttributes</Value>
+        <Value AttributeID="AttributeID_Name">ValidIn (Valid In Blue Tree:)</Value>
+      </MetaData>
+      <AttributeGroupLink AttributeGroupID="Attributes_for_reporting"/>
+      <UserTypeLink UserTypeID="stibo.normalattribute"/>
+    </Attribute>
+
+    <Attribute ID="ETIM.V6.Description" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" Referenced="true" Mandatory="false">
+      <Name>ETIM.V6.Description</Name>
+      <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="80" InputMask=""/>
+      <DimensionLink DimensionID="Language"/>
+      <MetaData>
+        <Value AttributeID="AttributeID_Name">ETIM.V6.Description (ETIM.V6.Description)</Value>
+      </MetaData>
+      <AttributeGroupLink AttributeGroupID="SuperUserPriviliges"/>
+      <AttributeGroupLink AttributeGroupID="PowerUserPriviligesGlobal"/>
+      <AttributeGroupLink AttributeGroupID="ETIM.V6.Meta.Attributes"/>
+      <UserTypeLink UserTypeID="Unit"/>
+      <UserTypeLink UserTypeID="ETIM.V6.Article.Group.Type"/>
+      <UserTypeLink UserTypeID="stibo.normalattribute"/>
+      <UserTypeLink UserTypeID="ETIM.V6.Article.Classification.Type"/>
+    </Attribute>
+
+    <Attribute ID="ETIM.V6.ID" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" Referenced="true" Mandatory="false">
+      <Name>ETIM.V6.ID</Name>
+      <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="10" InputMask=""/>
+      <MetaData>
+        <Value AttributeID="AttributeID_Name">ETIM.V6.ID (ETIM.V6.ID)</Value>
+      </MetaData>
+      <AttributeGroupLink AttributeGroupID="SuperUserPriviliges"/>
+      <AttributeGroupLink AttributeGroupID="PowerUserPriviligesGlobal"/>
+      <AttributeGroupLink AttributeGroupID="ETIM.V6.Meta.Attributes"/>
+      <UserTypeLink UserTypeID="Unit"/>
+      <UserTypeLink UserTypeID="ETIM.V6.Article.Group.Type"/>
+      <UserTypeLink UserTypeID="stibo.normalattribute"/>
+      <UserTypeLink UserTypeID="ETIM.V6.Article.Classification.Type"/>
+    </Attribute>
+
+    <Attribute ID="4941" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" Referenced="true" Mandatory="false">
+      <Name>Unit Description</Name>
+      <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""/>
+      <DimensionLink DimensionID="Language"/>
+      <MetaData>
+        <Value AttributeID="AttributeID_Name">4941 (Unit Description)</Value>
+      </MetaData>
+      <AttributeGroupLink AttributeGroupID="SuperUserPriviliges"/>
+      <AttributeGroupLink AttributeGroupID="Meta-Data Attributes"/>
+      <AttributeGroupLink AttributeGroupID="PowerUserPriviligesLocal"/>
+      <AttributeGroupLink AttributeGroupID="PowerUserPriviligesGlobal"/>
+      <UserTypeLink UserTypeID="stibo.normalattribute"/>
+      <UserTypeLink UserTypeID="Unit"/>
+    </Attribute>
+
+    <Attribute ID="TenderTextAttributes_CF" MultiValued="true" ProductMode="Normal" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" HierarchicalFiltering="false" ClassificationHierarchicalFiltering="false" Selected="true" Referenced="true" Mandatory="false">
+      <Name>Tender Text Attributes Selection List CF</Name>
+      <ListOfValueLink ListOfValueID="TenderText-lov"/>
+      <DimensionLink DimensionID="Country"/>
+      <MetaData>
+        <Value AttributeID="AttributeID_Name">TenderTextAttributes_CF (Tender Text Attributes Selection List CF)</Value>
+      </MetaData>
+      <AttributeGroupLink AttributeGroupID="SuperUserPriviliges"/>
+      <AttributeGroupLink AttributeGroupID="PowerUserPriviligesLocal"/>
+      <AttributeGroupLink AttributeGroupID="Tendertext Attributes"/>
+      <AttributeGroupLink AttributeGroupID="PowerUserPriviligesGlobal"/>
+      <UserTypeLink UserTypeID="Commercial Family"/>
+    </Attribute>
+
+    <Attribute ID="MD System of Record" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="true" Derived="false" Completeness="20" HierarchicalFiltering="false" ClassificationHierarchicalFiltering="false" Referenced="true" Mandatory="false">
+      <Name>MD System of Record</Name>
+      <ListOfValueLink ListOfValueID="MD System of Record"/>
+      <DimensionLink DimensionID="Language"/>
+      <MetaData>
+        <Value AttributeID="MD System of Record">STEP</Value>
+        <Value AttributeID="AttributeID_Name">MD System of Record (MD System of Record)</Value>
+        <Value AttributeID="MD System of Record Contact">Product Manager</Value>
+      </MetaData>
+      <AttributeGroupLink AttributeGroupID="SuperUserPriviliges"/>
+      <AttributeGroupLink AttributeGroupID="Meta-Data Attributes"/>
+      <AttributeGroupLink AttributeGroupID="PowerUserPriviligesLocal"/>
+      <AttributeGroupLink AttributeGroupID="PowerUserPriviligesGlobal"/>
+      <UserTypeLink UserTypeID="stibo.normalattribute"/>
+    </Attribute>
+
+    <Attribute ID="xUCDM_CSChapterGroupName" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="false" Derived="true" Referenced="true" Mandatory="false">
+      <Name>xUCDM_CSChapterGroupName</Name>
+      <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""/>
+      <ValueTemplate>&lt;derive expr=&quot;if( exact( value('xUCDM_CSChapterGroupID'), '' ), '-', iterate( stepurl2objid( stepurl( 'attributegroup', value('xUCDM_CSChapterGroupID') ) ), 'stepname()' ) )&quot;/&gt;</ValueTemplate>
+      <MetaData>
+        <Value AttributeID="AttributeID_Name">xUCDM_CSChapterGroupName (xUCDM_CSChapterGroupName)</Value>
+        <Value AttributeID="xUCDM_CSChapterGroupID">xUCDM message attributes</Value>
+      </MetaData>
+      <AttributeGroupLink AttributeGroupID="xUCDM message attributes"/>
+      <UserTypeLink UserTypeID="stibo.normalattribute"/>
+    </Attribute>
+
+    <Attribute ID="AttributeID_Name" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" Referenced="true" Mandatory="false">
+      <Name>AttributeID_Name (English)</Name>
+      <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="1000" InputMask=""/>
+      <MetaData>
+        <Value AttributeID="AttributeID_Name">AttributeID_Name (AttributeID_Name (English))</Value>
+      </MetaData>
+      <AttributeGroupLink AttributeGroupID="Attributes_for_reporting"/>
+      <AttributeGroupLink AttributeGroupID="Products_Workflows_Report_Attributes"/>
+      <UserTypeLink UserTypeID="stibo.normalattribute"/>
+    </Attribute>
+
+    <Attribute ID="ETIM.V7.Feature.ID" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" Referenced="true" Mandatory="false">
+      <Name>ETIM.V7.Feature.ID</Name>
+      <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="10" InputMask=""/>
+      <AttributeGroupLink AttributeGroupID="SuperUserPriviliges"/>
+      <AttributeGroupLink AttributeGroupID="ETIM.V7.Meta.Attributes"/>
+      <AttributeGroupLink AttributeGroupID="PowerUserPriviligesGlobal"/>
+      <UserTypeLink UserTypeID="stibo.normalattribute"/>
+    </Attribute>
+
+    <Attribute ID="EcoPP_CSChapterGroupName" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="false" Derived="true" Referenced="true" Mandatory="false">
+      <Name>EcoPP_CSChapterGroupName</Name>
+      <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""/>
+      <ValueTemplate>&lt;derive expr=&quot;if( exact( value('EcoPP_CSChapterGroupID'), '' ), '-', iterate( stepurl2objid( stepurl( 'attributegroup', value('EcoPP_CSChapterGroupID') ) ), 'stepname()' ) )&quot;/&gt;</ValueTemplate>
+      <MetaData>
+        <Value AttributeID="AttributeID_Name">EcoPP_CSChapterGroupName (EcoPP_CSChapterGroupName)</Value>
+        <Value AttributeID="EcoPP_CSChapterGroupID">Eco.passport.Groups</Value>
+      </MetaData>
+      <AttributeGroupLink AttributeGroupID="Eco.passport.Groups"/>
+      <UserTypeLink UserTypeID="stibo.normalattribute"/>
+    </Attribute>
+
+    <Attribute ID="Enterprise label" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" Referenced="true" Mandatory="false">
+      <Name>Enterprise label</Name>
+      <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""/>
+      <MetaData>
+        <Value AttributeID="AttributeID_Name">Enterprise label (Enterprise label)</Value>
+      </MetaData>
+      <AttributeGroupLink AttributeGroupID="SuperUserPriviliges"/>
+      <AttributeGroupLink AttributeGroupID="PowerUserPriviligesLocal"/>
+      <AttributeGroupLink AttributeGroupID="Metadata for Attributes"/>
+      <AttributeGroupLink AttributeGroupID="PowerUserPriviligesGlobal"/>
+      <UserTypeLink UserTypeID="stibo.normalattribute"/>
+    </Attribute>
+
+    <Attribute ID="ETIM.V6.Feature.ID" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" Referenced="true" Mandatory="false">
+      <Name>ETIM.V6.Feature.ID</Name>
+      <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="10" InputMask=""/>
+      <MetaData>
+        <Value AttributeID="AttributeID_Name">ETIM.V6.Feature.ID (ETIM.V6.Feature.ID)</Value>
+      </MetaData>
+      <AttributeGroupLink AttributeGroupID="SuperUserPriviliges"/>
+      <AttributeGroupLink AttributeGroupID="PowerUserPriviligesGlobal"/>
+      <AttributeGroupLink AttributeGroupID="ETIM.V6.Meta.Attributes"/>
+      <UserTypeLink UserTypeID="stibo.normalattribute"/>
+    </Attribute>
+
+    <Attribute ID="ETIM.V6.Sort.Number" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" Referenced="true" Mandatory="false">
+      <Name>ETIM.V6.Sort.Number</Name>
+      <Validation BaseType="integer" MinValue="" MaxValue="" MaxLength="" InputMask=""/>
+      <MetaData>
+        <Value AttributeID="AttributeID_Name">ETIM.V6.Sort.Number (ETIM.V6.Sort.Number)</Value>
+      </MetaData>
+      <AttributeGroupLink AttributeGroupID="SuperUserPriviliges"/>
+      <AttributeGroupLink AttributeGroupID="PowerUserPriviligesGlobal"/>
+      <AttributeGroupLink AttributeGroupID="ETIM.V6.Meta.Attributes"/>
+      <UserTypeLink UserTypeID="stibo.normalattribute"/>
+      <LinkType LinkTypeID="CA"/>
+    </Attribute>
+
+    <Attribute ID="ETIM Feature ID" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" Referenced="true" Mandatory="false">
+      <Name>ETIM Feature ID</Name>
+      <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="10" InputMask=""/>
+      <AttributeGroupLink AttributeGroupID="ETIM Meta Attributes"/>
+      <UserTypeLink UserTypeID="stibo.normalattribute"/>
+    </Attribute>
+
+    <Attribute ID="Enterprise description" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" Referenced="true" Mandatory="false">
+      <Name>Enterprise description</Name>
+      <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="400" InputMask=""/>
+      <MetaData>
+        <Value AttributeID="AttributeID_Name">Enterprise description (Enterprise description)</Value>
+      </MetaData>
+      <AttributeGroupLink AttributeGroupID="SuperUserPriviliges"/>
+      <AttributeGroupLink AttributeGroupID="PowerUserPriviligesLocal"/>
+      <AttributeGroupLink AttributeGroupID="Metadata for Attributes"/>
+      <AttributeGroupLink AttributeGroupID="PowerUserPriviligesGlobal"/>
+      <UserTypeLink UserTypeID="stibo.normalattribute"/>
+    </Attribute>
+
+    <Attribute ID="xUCDM_Rank" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="false" Derived="true" Referenced="true" Mandatory="false">
+      <Name>xUCDM_Rank</Name>
+      <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""/>
+      <ValueTemplate>&lt;derive expr=&quot;if(exact(value('xUCDM_CSChapterGroupID'),''),'',iterate(stepurl2objid(stepurl('attributegroup',value('xUCDM_CSChapterGroupID'))),'value(&amp;quot;Attribute Group Order&amp;quot;)'))&quot;/&gt;</ValueTemplate>
+      <MetaData>
+        <Value AttributeID="AttributeID_Name">xUCDM_Rank (xUCDM_Rank)</Value>
+        <Value AttributeID="xUCDM_CSChapterGroupID">xUCDM message attributes</Value>
+      </MetaData>
+      <AttributeGroupLink AttributeGroupID="xUCDM message attributes"/>
+      <UserTypeLink UserTypeID="stibo.normalattribute"/>
+    </Attribute>
+
+    <Attribute ID="EcoPP Attribute Rank" MultiValued="true" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="true" Derived="false" Referenced="true" Mandatory="false">
+      <Name>EcoPP Attribute Rank</Name>
+      <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="9" InputMask="9999-9999"/>
+      <MetaData>
+        <MultiValue AttributeID="Attribute Rank">
+          <Value>1012-0010</Value>
+          <Value>1060-0010</Value>
+        </MultiValue>
+        <Value AttributeID="AttributeID_Name">Attribute Rank (Attribute Rank)</Value>
+      </MetaData>
+      <AttributeGroupLink AttributeGroupID="SuperUserPriviliges"/>
+      <AttributeGroupLink AttributeGroupID="Meta-Data Attributes"/>
+      <AttributeGroupLink AttributeGroupID="PowerUserPriviligesLocal"/>
+      <AttributeGroupLink AttributeGroupID="PowerUserPriviligesGlobal"/>
+      <AttributeGroupLink AttributeGroupID="Eco.passport.Groups"/>
+      <UserTypeLink UserTypeID="PFT Row Template"/>
+      <UserTypeLink UserTypeID="Product Family Tables Sub Node"/>
+      <UserTypeLink UserTypeID="Product Family Tables Root Node"/>
+      <UserTypeLink UserTypeID="Product Family Table Harmonization"/>
+      <UserTypeLink UserTypeID="stibo.normalattribute"/>
+      <UserTypeLink UserTypeID="PFT Harmonization Root Node"/>
+    </Attribute>
+
+    <Attribute ID="ETIM.V7.ID" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" Referenced="true" Mandatory="false">
+      <Name>ETIM.V7.ID</Name>
+      <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="10" InputMask=""/>
+      <AttributeGroupLink AttributeGroupID="SuperUserPriviliges"/>
+      <AttributeGroupLink AttributeGroupID="ETIM.V7.Meta.Attributes"/>
+      <AttributeGroupLink AttributeGroupID="PowerUserPriviligesGlobal"/>
+      <UserTypeLink UserTypeID="Unit"/>
+      <UserTypeLink UserTypeID="ETIM.V7.Article.Classification.Type"/>
+      <UserTypeLink UserTypeID="ETIM.V7.Article.Group.Type"/>
+      <UserTypeLink UserTypeID="stibo.normalattribute"/>
+    </Attribute>
+
+    <Attribute ID="PublicationGroupLum" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="true" Derived="false" Completeness="20" HierarchicalFiltering="false" ClassificationHierarchicalFiltering="false" Referenced="true" Mandatory="false">
+      <Name>Publication group - Luminaires</Name>
+      <ListOfValueLink ListOfValueID="PublicationGroup-lov"/>
+      <DimensionLink DimensionID="Language"/>
+      <MetaData>
+        <Value AttributeID="MD System of Record Contact">Product Manager</Value>
+        <Value AttributeID="AttributeID_Name">PublicationGroupLum (Publication group - Luminaires)</Value>
+        <Value AttributeID="MD System of Record">STEP</Value>
+      </MetaData>
+      <AttributeGroupLink AttributeGroupID="SuperUserPriviliges"/>
+      <AttributeGroupLink AttributeGroupID="Meta-Data Attributes"/>
+      <AttributeGroupLink AttributeGroupID="PowerUserPriviligesLocal"/>
+      <AttributeGroupLink AttributeGroupID="Metadata for Attributes"/>
+      <AttributeGroupLink AttributeGroupID="PowerUserPriviligesGlobal"/>
+      <UserTypeLink UserTypeID="stibo.normalattribute"/>
+    </Attribute>
+
+    <Attribute ID="xUCDM_Attribute_Rank" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="false" Derived="true" Referenced="true" Mandatory="false">
+      <Name>xUCDM_Attribute_Rank</Name>
+      <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""/>
+      <ValueTemplate>&lt;derive expr=&quot;{ groupRank:=value('xUCDM_Rank', ''), ranks:=if( exact(groupRank, ''), MULTIVALUE2LIST(''), FILTER( MULTIVALUE2LIST( value('Attribute Rank') ), 'exact(left(item, len(groupRank)), groupRank)' ) ) } if( listlen(ranks)&amp;lt;1, '', RIGHT( listitem(ranks, 1), 4 ) )&quot;/&gt;</ValueTemplate>
+      <MetaData>
+        <Value AttributeID="xUCDM_CSChapterGroupID">xUCDM message attributes</Value>
+        <Value AttributeID="AttributeID_Name">xUCDM_Attribute_Rank (xUCDM_Attribute_Rank)</Value>
+      </MetaData>
+      <AttributeGroupLink AttributeGroupID="xUCDM message attributes"/>
+      <UserTypeLink UserTypeID="stibo.normalattribute"/>
+    </Attribute>
+
+    <Attribute ID="EcoPP_CSChapterItemRank" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="false" Derived="true" Referenced="true" Mandatory="false">
+      <Name>EcoPP_CSChapterItemRank</Name>
+      <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""/>
+      <ValueTemplate>&lt;derive expr=&quot;{ groupRank:=value('EcoPP_CSChapterGroupRank', ''), ranks:=if( exact(groupRank, ''), MULTIVALUE2LIST(''), FILTER( MULTIVALUE2LIST( value('Attribute Rank') ), 'exact(left(item, len(groupRank)), groupRank)' ) ) } if( listlen(ranks)&amp;lt;1, '', RIGHT( listitem(ranks, 1), 4 ) )&quot;/&gt;</ValueTemplate>
+      <MetaData>
+        <Value AttributeID="AttributeID_Name">EcoPP_CSChapterItemRank (EcoPP_CSChapterItemRank)</Value>
+        <Value AttributeID="EcoPP_CSChapterGroupID">Eco.passport.Groups</Value>
+      </MetaData>
+      <AttributeGroupLink AttributeGroupID="Eco.passport.Groups"/>
+      <UserTypeLink UserTypeID="stibo.normalattribute"/>
+    </Attribute>
+
+    <Attribute ID="EcoPP_CSChapterGroupRank" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="false" Derived="true" Referenced="true" Mandatory="false">
+      <Name>EcoPP_CSChapterGroupRank</Name>
+      <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""/>
+      <ValueTemplate>&lt;derive expr=&quot;if(exact(value('EcoPP_CSChapterGroupID'),''),'',iterate(stepurl2objid(stepurl('attributegroup',value('EcoPP_CSChapterGroupID'))),'value(&amp;quot;Attribute Group Order&amp;quot;)'))&quot;/&gt;</ValueTemplate>
+      <MetaData>
+        <Value AttributeID="AttributeID_Name">EcoPP_CSChapterGroupRank (EcoPP_CSChapterGroupRank)</Value>
+        <Value AttributeID="EcoPP_CSChapterGroupID">Eco.passport.Groups</Value>
+      </MetaData>
+      <AttributeGroupLink AttributeGroupID="Eco.passport.Groups"/>
+      <UserTypeLink UserTypeID="stibo.normalattribute"/>
+    </Attribute>
+
+    <Attribute ID="ETIM.V7.Sort.Number" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" Referenced="true" Mandatory="false">
+      <Name>ETIM.V7.Sort.Number</Name>
+      <Validation BaseType="integer" MinValue="" MaxValue="" MaxLength="" InputMask=""/>
+      <AttributeGroupLink AttributeGroupID="SuperUserPriviliges"/>
+      <AttributeGroupLink AttributeGroupID="ETIM.V7.Meta.Attributes"/>
+      <AttributeGroupLink AttributeGroupID="PowerUserPriviligesGlobal"/>
+      <UserTypeLink UserTypeID="stibo.normalattribute"/>
+      <LinkType LinkTypeID="CA"/>
+    </Attribute>
+
+    <Attribute ID="EcoPP_CSChapterGroupID" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" Referenced="true" Mandatory="false">
+      <Name>EcoPP_CSChapterGroupID</Name>
+      <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""/>
+      <MetaData>
+        <Value AttributeID="AttributeID_Name">EcoPP_CSChapterGroupID (EcoPP_CSChapterGroupID)</Value>
+        <Value AttributeID="EcoPP_CSChapterGroupID">Eco.passport.Groups</Value>
+      </MetaData>
+      <AttributeGroupLink AttributeGroupID="Eco.passport.Groups"/>
+      <UserTypeLink UserTypeID="stibo.normalattribute"/>
+    </Attribute>
+
+    <Attribute ID="xUCDM_CSChapterGroupID" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" Referenced="true" Mandatory="false">
+      <Name>xUCDM_CSChapterGroupID</Name>
+      <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""/>
+      <MetaData>
+        <Value AttributeID="xUCDM_CSChapterGroupID">xUCDM message attributes</Value>
+        <Value AttributeID="AttributeID_Name">xUCDM_CSChapterGroupID (xUCDM_CSChapterGroupID)</Value>
+      </MetaData>
+      <AttributeGroupLink AttributeGroupID="xUCDM message attributes"/>
+      <UserTypeLink UserTypeID="stibo.normalattribute"/>
+    </Attribute>
+
+    <Attribute ID="ETIM.V7.Description" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" Referenced="true" Mandatory="false">
+      <Name>ETIM.V7.Description</Name>
+      <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="80" InputMask=""/>
+      <DimensionLink DimensionID="Language"/>
+      <AttributeGroupLink AttributeGroupID="SuperUserPriviliges"/>
+      <AttributeGroupLink AttributeGroupID="ETIM.V7.Meta.Attributes"/>
+      <AttributeGroupLink AttributeGroupID="PowerUserPriviligesGlobal"/>
+      <UserTypeLink UserTypeID="Unit"/>
+      <UserTypeLink UserTypeID="ETIM.V7.Article.Classification.Type"/>
+      <UserTypeLink UserTypeID="ETIM.V7.Article.Group.Type"/>
+      <UserTypeLink UserTypeID="stibo.normalattribute"/>
+    </Attribute>
+
+    <Attribute ID="Mandatory_In_Blue_Tree_Node" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" Referenced="true" Mandatory="false">
+      <Name>Mandatory in blue tree node:</Name>
+      <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="2000" InputMask=""/>
+      <MetaData>
+        <Value AttributeID="AttributeID_Name">Mandatory_In_Blue_Tree_Node (Mandatory in blue tree node:)</Value>
+      </MetaData>
+      <AttributeGroupLink AttributeGroupID="Attributes_for_reporting"/>
+      <AttributeGroupLink AttributeGroupID="Products_Workflows_Report_Attributes"/>
+      <UserTypeLink UserTypeID="stibo.normalattribute"/>
+    </Attribute>
+
+    <Attribute ID="MD System of Record Identifier" MultiValued="false" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="false" Derived="false" Referenced="true" Mandatory="false">
+      <Name>MD System of Record Identifier</Name>
+      <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="100" InputMask=""/>
+      <MetaData>
+        <Value AttributeID="AttributeID_Name">MD System of Record Identifier (MD System of Record Identifier)</Value>
+      </MetaData>
+      <AttributeGroupLink AttributeGroupID="SuperUserPriviliges"/>
+      <AttributeGroupLink AttributeGroupID="Meta-Data Attributes"/>
+      <AttributeGroupLink AttributeGroupID="PowerUserPriviligesLocal"/>
+      <AttributeGroupLink AttributeGroupID="PowerUserPriviligesGlobal"/>
+      <UserTypeLink UserTypeID="stibo.normalattribute"/>
+    </Attribute>
+
+    <Attribute ID="Attribute Rank" MultiValued="true" ProductMode="Property" FullTextIndexed="false" ExternallyMaintained="true" Derived="false" Referenced="true" Mandatory="false">
+      <Name>Attribute Rank</Name>
+      <Validation BaseType="text" MinValue="" MaxValue="" MaxLength="9" InputMask="9999-9999"/>
+      <MetaData>
+        <MultiValue AttributeID="Attribute Rank">
+          <Value>1012-0010</Value>
+          <Value>1060-0010</Value>
+        </MultiValue>
+        <Value AttributeID="AttributeID_Name">Attribute Rank (Attribute Rank)</Value>
+      </MetaData>
+      <AttributeGroupLink AttributeGroupID="SuperUserPriviliges"/>
+      <AttributeGroupLink AttributeGroupID="Meta-Data Attributes"/>
+      <AttributeGroupLink AttributeGroupID="PowerUserPriviligesLocal"/>
+      <AttributeGroupLink AttributeGroupID="PowerUserPriviligesGlobal"/>
+      <UserTypeLink UserTypeID="PFT Row Template"/>
+      <UserTypeLink UserTypeID="Product Family Tables Sub Node"/>
+      <UserTypeLink UserTypeID="Product Family Tables Root Node"/>
+      <UserTypeLink UserTypeID="Product Family Table Harmonization"/>
+      <UserTypeLink UserTypeID="stibo.normalattribute"/>
+      <UserTypeLink UserTypeID="PFT Harmonization Root Node"/>
+    </Attribute>
+
+  </AttributeList>
+</STEP-ProductInformation>
