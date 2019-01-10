@@ -2,7 +2,7 @@
 # Read and parse TenderText.
 #
 #
-# BHE, 21-11-2018
+# BHE, 21-11-2018/10-01-2019
 #
 
 #library(XML)
@@ -51,13 +51,17 @@ remove(StepTTAttLov.r, StepAttributes.r, LisaTT.r, StepFPs.r)
 LisaTT.c %>%
   dplyr::distinct(CF_ID) %>%
   dplyr::count()
-
 # answer = 140
+
+# how many unique FP's do we have?
+LisaTT.c %>%
+  dplyr::distinct(FP_ID) %>%
+  dplyr::count()
+# answer = 2839
 
 
 # 1. can TT be migrated to the CF?
 #    (in other words; do all FP's in a CF have the same TT)?
-
 LisaTT.c %>%
   dplyr::group_by(CF_ID) %>%
   dplyr::summarise(unique_tt_count = n_distinct(BasicText)) %>%
@@ -79,7 +83,9 @@ LisaTT.c %>%
 # 10 COMF-3336                 59
 # # ... with 97 more rows
 # 
-# Answer: in general its not possible to migrate to the CF, because most FP's have a unique TT.'
+# Answer: in general its not possible to migrate to the CF, because most FP's have a unique TT.
+#
+# Note; based on STEP-data, some products can not be linked to a commercial-family...
 
 LisaTT.c %>%
   dplyr::group_by(CF_ID) %>%
@@ -89,12 +95,36 @@ LisaTT.c %>%
 
 # Answer: confirmed with the TextBrief.
 
+# check which introductionText can be migrated to the family level:
+LisaTT_introductionText.c <-
+  LisaTT.c %>%
+  dplyr::mutate(introductionText = TextBrief) %>%
+  dplyr::select(CF_ID, FP_ID, introductionText) %>%
+  dplyr::group_by(CF_ID) %>%
+  dplyr::mutate(FP_count = n(),                              # count number of products per family
+                IT_count = n_distinct(introductionText)) %>% # count unique introduction texts per family
+  dplyr::ungroup()
+
+LisaTT_introductionText_per_CF.c <-
+  LisaTT_introductionText.c %>%
+  # and filter out those occurances where the number of unique texts = 1 (all products have same text)
+  dplyr::filter(IT_count == 1) %>%
+  dplyr::group_by(CF_ID) %>%
+  dplyr::distinct(CF_ID, introductionText) %>%
+  dplyr::arrange(CF_ID)
+
+LisaTT_introductionText_per_FP.c <-
+  LisaTT_introductionText.c %>%
+  # and filter out those occurances where the number of products is equal to the number of unique texts
+  dplyr::filter(IT_count > 1) %>%
+  dplyr::arrange(CF_ID, FP_ID)
 
 ###############################################################################
-# more munging
+# more munging 1: TT Attributes
 ###############################################################################
 
-# 1. split the textBrief into separate fields for which the LOV-id can be found.
+# 1. split the textBrief (listing of product TT-related attributes) into separate 
+#    fields for which the LOV-id can be found.
 #    note: probably a mapping of the separate fields to the LOV-values is required!
 #
 # LOV_values.c <-
@@ -141,3 +171,108 @@ LOV_values_with_STEP_IDs.c <-
 #
 # add new values to the TT LOV which are only valid for the "de_XX" contexts.
 #
+
+# Number of unique attributes (that can be migrated when a mapping table is created)
+Unique_TT_attributes.c <-
+  LOV_values.c %>%
+  dplyr::select(value) %>%
+  unique() %>%
+  arrange(value)
+
+# TODO: split further based on ";" separator in some of the values.
+# TODO: check which values can be migrated to the CF (similar for all products 
+#       in a family) and which must be migrated to the FP.
+
+###############################################################################
+# more munging 2: TT Approbation Marks
+###############################################################################
+
+# 1. split the Certificates (listing of product TT-related approbation marks) 
+#    into separate fields for which the LOV-id can be found.
+#
+
+Approbation_marks.c <-
+  LisaTT.c %>%
+  dplyr::distinct(Certificates, .keep_all = TRUE) %>% # from 2955 down to 121 rows...
+  tidyr::separate(col = Certificates, 
+                  into = c("ttam0", "ttam1", "ttam2", "ttam3", "ttam4", "ttam5", "ttam6", "ttam7", "ttam8", "ttam9"), 
+                  sep = ";") %>%
+  dplyr::select(FP_ID, starts_with("ttam")) %>%
+  # from wide to long format
+  tidyr::gather(key = "appmark", value = "value", ttam0:ttam9) %>%
+  # remove attributes with na-values
+  dplyr::filter(!is.na(value)) 
+
+Unique_Approbation_marks.c <-
+  Approbation_marks.c %>%
+  dplyr::select(value) %>%
+  unique() %>%
+  arrange(value)
+
+# 32 unique values (including one empty value and a "NA' value)
+
+
+LisaTT_appmarks.c <-
+  LisaTT.c %>%
+  dplyr::mutate(appmarks = Certificates) %>%
+  dplyr::select(CF_ID, FP_ID, appmarks) %>%
+  dplyr::group_by(CF_ID) %>%
+  dplyr::mutate(FP_count = n(),                              # count number of products per family
+                AM_count = n_distinct(appmarks)) %>% # count unique introduction texts per family
+  dplyr::ungroup()
+
+LisaTT_appmarks_per_CF.c <-
+  LisaTT_appmarks.c %>%
+  # and filter out those occurances where the number of unique texts = 1 (all products have same text)
+  dplyr::filter(AM_count == 1) %>%
+  dplyr::group_by(CF_ID) %>%
+  dplyr::distinct(CF_ID, appmarks) %>%
+  dplyr::arrange(CF_ID)
+
+LisaTT_appmarks_per_FP.c <-
+  LisaTT_appmarks.c %>%
+  # and filter out those occurances where the number of products is equal to the number of unique texts
+  dplyr::filter(AM_count > 1) %>%
+  dplyr::arrange(CF_ID, FP_ID)
+
+
+
+# 
+<TendertextAttributes>
+  <Introduction_Tendertext_FP>
+  <?Target ?>
+  </Introduction_Tendertext_FP>
+  <TenderTextAttributes_FP>
+  <?Target ?>
+  </TenderTextAttributes_FP>
+  <Approbation_Mark_Portal_Tendertext>
+  <CE-MARK>
+  <?Target ?>
+  </CE-MARK>
+  <ENEC-MARK>
+  <?Target ?>
+  </ENEC-MARK>
+  <FLAM-MARK>
+  <?Target ?>
+  </FLAM-MARK>
+  <GLWRTEST>
+  <?Target ?>
+  </GLWRTEST>
+  <IPV>
+  <?Target ?>
+  </IPV> 
+  <IKC>
+  <?Target ?>
+  </IKC>
+  <CLS>
+  <?Target ?>
+  </CLS>
+  </Approbation_Mark_Portal_Tendertext>  
+  <Footer_Tendertext_FP>
+  <?Target ?>
+  </Footer_Tendertext_FP>
+  <TenderText_FP>
+  <?Target ?>
+  </TenderText_FP>
+  </TendertextAttributes>
+  
