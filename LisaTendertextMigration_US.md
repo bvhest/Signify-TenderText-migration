@@ -54,9 +54,10 @@ Findings
  # the product attributes cannot be automatically migrated unless a mapping is made between the values available in LISA TT and the values available in the STEP LOV for the STEP Tendertext attributes.
 
 h3. Changes
- # Map the file "" to commercial families and the CF BasicText  attribute,
- # Map the file "" to final products and the FP BasicText  attribute,
- # Map the file "" to final products and the FP Approbation Mark attribute,
+ # Map the file "LisaTT_introductionText_per_CF.csv" to commercial families and the CF BasicText  attribute,
+ # Map the file "LisaTT_introductionText_per_FP.csv" to final products and the FP BasicText  attribute,
+ # Map the file "LisaTT_approbation_marks_per_CF.csv" to commercial families and the CF Approbation Mark attribute,
+ # Map the file "LisaTT_approbation_marks_per_FP.csv" to final products and the FP Approbation Mark attribute,
  # Map the file "" to final products and the FP TT Attributes attribute,
 
 h2. Acceptance criteria
