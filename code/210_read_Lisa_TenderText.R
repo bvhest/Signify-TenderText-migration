@@ -119,6 +119,12 @@ LisaTT_introductionText_per_FP.c <-
   dplyr::filter(IT_count > 1) %>%
   dplyr::arrange(CF_ID, FP_ID)
 
+readr::write_excel_csv(LisaTT_introductionText_per_CF.c,
+                       path = "./data/result/LisaTT_introductionText_per_CF.csv")
+
+readr::write_excel_csv(LisaTT_introductionText_per_FP.c,
+                       path = "./data/result/LisaTT_introductionText_per_FP.csv")
+
 ###############################################################################
 # more munging 1: TT Attributes
 ###############################################################################
@@ -127,25 +133,6 @@ LisaTT_introductionText_per_FP.c <-
 #    fields for which the LOV-id can be found.
 #    note: probably a mapping of the separate fields to the LOV-values is required!
 #
-# LOV_values.c <-
-#   LisaTT.c %>%
-#   dplyr::distinct(TextBrief, .keep_all = TRUE) %>% # from 2955 down to 1120 rows...
-#   dplyr::mutate(attributes = stringr::str_split(TextBrief, pattern = ","),
-#                 attributes = stringr::str_trim(attributes)) %>%
-#   dplyr::select(FP_ID, attributes)
-# 
-# glimpse(LOV_values.c)
-# 
-# # !!!!!
-# # ToDo:
-# # split attributes into long-form & merge with StepAttLov.c !
-# 
-# LOV_values.c2 <-
-#   LOV_values.c %>%
-#   tidyr::separate(col = attributes, 
-#                   into = c("tta0", "tta1", "tta2", "tta3", "tta4", "tta5", "tta6", "tta7", "tta8", "tta9"), 
-#                   sep = ",")
-# # this can be accomplished more easily!!!
 
 LOV_values.c <-
   LisaTT.c %>%
@@ -169,7 +156,8 @@ LOV_values_with_STEP_IDs.c <-
 
 # Possible migration strategy
 #
-# add new values to the TT LOV which are only valid for the "de_XX" contexts.
+# 1. add new values to the TT LOV which are only valid for the "de_XX" contexts.
+# 2. create mapping table for the LOV-values
 #
 
 # Number of unique attributes (that can be migrated when a mapping table is created)
@@ -179,9 +167,20 @@ Unique_TT_attributes.c <-
   unique() %>%
   arrange(value)
 
-# TODO: split further based on ";" separator in some of the values.
+# TODO: split further based on ";" and " - " separator in some of the values.
 # TODO: check which values can be migrated to the CF (similar for all products 
 #       in a family) and which must be migrated to the FP.
+
+TT_attributes.c <-
+  LOV_values.c %>%
+  
+  
+
+readr::write_excel_csv(LisaTT_appmarks_per_CF.c,
+                       path = "./data/result/LisaTT_Attributes_per_CF.csv")
+
+readr::write_excel_csv(LisaTT_appmarks_per_FP.c,
+                       path = "./data/result/LisaTT_Attributes_per_FP.csv")
 
 ###############################################################################
 # more munging 2: TT Approbation Marks
@@ -235,6 +234,11 @@ LisaTT_appmarks_per_FP.c <-
   dplyr::filter(AM_count > 1) %>%
   dplyr::arrange(CF_ID, FP_ID)
 
+readr::write_excel_csv(LisaTT_appmarks_per_CF.c,
+                       path = "./data/result/LisaTT_approbation_marks_per_CF.csv")
+
+readr::write_excel_csv(LisaTT_appmarks_per_FP.c,
+                       path = "./data/result/LisaTT_approbation_marks_per_FP.csv")
 
 
 # 
