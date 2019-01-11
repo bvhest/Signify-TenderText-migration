@@ -154,6 +154,8 @@ LOV_values_with_STEP_IDs.c <-
 
 # NOT A SINGLE MATCH !!!
 
+remove(LOV_values_with_STEP_IDs.c, LOV_values.c)
+
 # Possible migration strategy
 #
 # 1. add new values to the TT LOV which are only valid for the "de_XX" contexts.
@@ -167,19 +169,169 @@ Unique_TT_attributes.c <-
   unique() %>%
   arrange(value)
 
-# TODO: split further based on ";" and " - " separator in some of the values.
-# TODO: check which values can be migrated to the CF (similar for all products 
-#       in a family) and which must be migrated to the FP.
+remove(Unique_TT_attributes.c)
 
-TT_attributes.c <-
-  LOV_values.c %>%
-  
-  
+# Repeat, but this time split on all three separator-characters found in the dataset: ";", "-", "," 
+# group into data-sets that can be migrated to CF- and FP-level:
+LisaTT_attributes.c <-
+  LisaTT.c %>%
+  dplyr::mutate(attributes = TextBrief) %>%
+  dplyr::select(CF_ID, FP_ID, attributes) %>%
+  dplyr::group_by(CF_ID) %>%
+  dplyr::mutate(FP_count = n(),                        # count number of products per family
+                AM_count = n_distinct(attributes)) %>% # count unique attributes per family
+  dplyr::ungroup()
 
-readr::write_excel_csv(LisaTT_appmarks_per_CF.c,
+#
+# TEST-code
+#
+# LisaTT_attributes.c <-
+#   LisaTT.c %>%
+#   tidyr::separate(col = TextBrief, 
+#                   into = c("tta0", "tta1", "tta2", "tta3", "tta4", "tta5", "tta6", "tta7", "tta8", "tta9"), 
+#                   sep = ";") %>%
+#   dplyr::select(CF_ID, FP_ID, starts_with("tta")) %>%
+#   # from wide to long format
+#   tidyr::gather(key = "attribute", value = "value", tta0:tta9) %>%
+#   # remove attributes with na-values
+#   dplyr::filter(!is.na(value)) %>%
+#   tidyr::separate(col = value, 
+#                   into = c("tta0", "tta1", "tta2", "tta3", "tta4", "tta5", "tta6", "tta7", "tta8", "tta9"), 
+#                   sep = "-") %>%
+#   dplyr::select(CF_ID, FP_ID, starts_with("tta")) %>%
+#   # from wide to long format
+#   tidyr::gather(key = "attribute", value = "value", tta0:tta9) %>%
+#   # remove attributes with na-values
+#   dplyr::filter(!is.na(value)) %>%
+#   tidyr::separate(col = value, 
+#                   into = c("tta0", "tta1", "tta2", "tta3", "tta4", "tta5", "tta6", "tta7", "tta8", "tta9"), 
+#                   sep = ",") %>%
+#   dplyr::select(CF_ID, FP_ID, starts_with("tta")) %>%
+#   # from wide to long format
+#   tidyr::gather(key = "attribute", value = "value", tta0:tta9) %>%
+#   # remove attributes with na-values
+#   dplyr::filter(!is.na(value)) 
+
+
+LisaTT_attributes_per_CF.c <-
+  LisaTT_attributes.c %>%
+  # and filter out those occurances where the number of unique texts = 1 (all products have same text)
+  dplyr::filter(AM_count == 1) %>%
+  dplyr::group_by(CF_ID) %>%
+  dplyr::distinct(CF_ID, attributes) %>%
+  dplyr::arrange(CF_ID) %>%
+  dplyr::ungroup() %>%
+  tidyr::separate(col = attributes, 
+                  into = c("tta0", "tta1", "tta2", "tta3", "tta4", "tta5", "tta6", "tta7", "tta8", "tta9"), 
+                  sep = ";") %>%
+  dplyr::select(CF_ID, starts_with("tta")) %>%
+  # from wide to long format
+  tidyr::gather(key = "attribute", value = "value", tta0:tta9) %>%
+  # remove attributes with na-values
+  dplyr::filter(!is.na(value)) %>%
+  #
+  # !!! splitting by "-" results in incorrect splitup for some texts...use " - ". !!!
+  #
+  tidyr::separate(col = value,
+                  into = c("tta0", "tta1", "tta2", "tta3", "tta4", "tta5", "tta6", "tta7", "tta8", "tta9"),
+                  sep = " - ") %>%
+  dplyr::select(CF_ID, starts_with("tta")) %>%
+  # from wide to long format
+  tidyr::gather(key = "attribute", value = "value", tta0:tta9) %>%
+  # remove attributes with na-values
+  dplyr::filter(!is.na(value)) %>%
+  tidyr::separate(col = value,
+                  into = c("tta0", "tta1", "tta2", "tta3", "tta4", "tta5", "tta6", "tta7", "tta8", "tta9"),
+                  sep = ", ") %>%
+  dplyr::select(CF_ID, starts_with("tta")) %>%
+  # from wide to long format
+  tidyr::gather(key = "attribute", value = "value", tta0:tta9) %>%
+  # remove attributes with na-values
+  dplyr::filter(!is.na(value))
+
+# Example of expected attribute values:
+# product : FP-910683000526
+# family  : COMF-1023
+# textbrief = attributes = 
+#   "MAXOS Reflektorstirnwand, 1/2lampig für Facettenreflektor TL-D in Kunstoff, in Weiß (RAL9016) eingefärbt."
+# 
+# expected attributes:
+#   1 : MAXOS Reflektorstirnwand
+#   2 : 1/2lampig für Facettenreflektor TL-D in Kunstoff
+#   3 : in Weiß (RAL9016) eingefärbt
+#
+# actual attributes:
+LisaTT_attributes_per_CF.c %>%
+  dplyr::filter(CF_ID == "COMF-1023")
+# NOT OK!!!
+# TODO: 
+#  1) check text split-up ! DONE 11-01-2018
+#  2) text clean-up: remove 
+#     a. leading/trailing spaces, 
+#     b. \r\r\n new-line characters
+#     c. end-of-line punctuation mark
+
+LisaTT_attributes_per_CF.c <-
+  LisaTT_attributes_per_CF.c %>%
+  dplyr::mutate(value = stringr::str_trim(value, side = "both")) %>% # remove leading/trailing spaces
+  dplyr::mutate(value = stringr::str_remove(value, pattern = "\r\r\n")) %>% # remove new-line characters
+  dplyr::mutate(value = stringr::str_remove(value, pattern = "\\.$")) # remove end-of-line punctuation mark
+
+LisaTT_attributes_per_CF.c %>%
+  dplyr::filter(CF_ID == "COMF-1023")
+# OK !!!
+
+# check 2: COMF-4810 has attributes splitted by " - ". Five should be present!
+# input is "ST740T - LED-Modul 1.500 lm - Elektronisches Betriebsgerät,schaltbar, gleichspannungsgeeignet für Notlichtbetrieb - Tiefstrahlend - Weiß und Schwarz"
+LisaTT_attributes_per_CF.c %>%
+  dplyr::filter(CF_ID == "COMF-4810")
+# NOK !!! because one of the attributes has values separated by a comma ",".
+#
+# after splitting on ", " the result is better, but not good.
+#
+# ... Too many splitting characters are used in LISA. Shitty data maintenance... :(
+
+LisaTT_attributes_per_FP.c <-
+  LisaTT_attributes.c %>%
+  # and filter out those occurances where the number of unique texts = 1 (all products have same text)
+  dplyr::filter(AM_count > 1) %>%
+  dplyr::group_by(FP_ID) %>%
+  dplyr::distinct(FP_ID, attributes) %>%
+  dplyr::arrange(FP_ID) %>%
+  dplyr::ungroup() %>%
+  tidyr::separate(col = attributes, 
+                  into = c("tta0", "tta1", "tta2", "tta3", "tta4", "tta5", "tta6", "tta7", "tta8", "tta9"), 
+                  sep = ";") %>%
+  dplyr::select(FP_ID, starts_with("tta")) %>%
+  # from wide to long format
+  tidyr::gather(key = "attribute", value = "value", tta0:tta9) %>%
+  # remove attributes with na-values
+  dplyr::filter(!is.na(value)) %>%
+  tidyr::separate(col = value, 
+                  into = c("tta0", "tta1", "tta2", "tta3", "tta4", "tta5", "tta6", "tta7", "tta8", "tta9"), 
+                  sep = "-") %>%
+  dplyr::select(FP_ID, starts_with("tta")) %>%
+  # from wide to long format
+  tidyr::gather(key = "attribute", value = "value", tta0:tta9) %>%
+  # remove attributes with na-values
+  dplyr::filter(!is.na(value)) %>%
+  # tidyr::separate(col = value, 
+  #                 into = c("tta0", "tta1", "tta2", "tta3", "tta4", "tta5", "tta6", "tta7", "tta8", "tta9"), 
+  #                 sep = ",") %>%
+  # dplyr::select(FP_ID, starts_with("tta")) %>%
+  # # from wide to long format
+  # tidyr::gather(key = "attribute", value = "value", tta0:tta9) %>%
+  # # remove attributes with na-values
+  # dplyr::filter(!is.na(value)) %>%
+  dplyr::mutate(value = stringr::str_trim(value, side = "both")) %>% # remove leading/trailing spaces
+  dplyr::mutate(value = stringr::str_remove(value, pattern = "\r\r\n")) %>% # remove new-line characters
+  dplyr::mutate(value = stringr::str_remove(value, pattern = "\\.$")) # remove end-of-line punctuation mark
+
+
+readr::write_excel_csv(LisaTT_attributes_per_CF.c,
                        path = "./data/result/LisaTT_Attributes_per_CF.csv")
 
-readr::write_excel_csv(LisaTT_appmarks_per_FP.c,
+readr::write_excel_csv(LisaTT_attributes_per_FP.c,
                        path = "./data/result/LisaTT_Attributes_per_FP.csv")
 
 ###############################################################################
@@ -242,41 +394,41 @@ readr::write_excel_csv(LisaTT_appmarks_per_FP.c,
 
 
 # 
-<TendertextAttributes>
-  <Introduction_Tendertext_FP>
-  <?Target ?>
-  </Introduction_Tendertext_FP>
-  <TenderTextAttributes_FP>
-  <?Target ?>
-  </TenderTextAttributes_FP>
-  <Approbation_Mark_Portal_Tendertext>
-  <CE-MARK>
-  <?Target ?>
-  </CE-MARK>
-  <ENEC-MARK>
-  <?Target ?>
-  </ENEC-MARK>
-  <FLAM-MARK>
-  <?Target ?>
-  </FLAM-MARK>
-  <GLWRTEST>
-  <?Target ?>
-  </GLWRTEST>
-  <IPV>
-  <?Target ?>
-  </IPV> 
-  <IKC>
-  <?Target ?>
-  </IKC>
-  <CLS>
-  <?Target ?>
-  </CLS>
-  </Approbation_Mark_Portal_Tendertext>  
-  <Footer_Tendertext_FP>
-  <?Target ?>
-  </Footer_Tendertext_FP>
-  <TenderText_FP>
-  <?Target ?>
-  </TenderText_FP>
-  </TendertextAttributes>
-  
+# <TendertextAttributes>
+#   <Introduction_Tendertext_FP>
+#   <?Target ?>
+#   </Introduction_Tendertext_FP>
+#   <TenderTextAttributes_FP>
+#   <?Target ?>
+#   </TenderTextAttributes_FP>
+#   <Approbation_Mark_Portal_Tendertext>
+#   <CE-MARK>
+#   <?Target ?>
+#   </CE-MARK>
+#   <ENEC-MARK>
+#   <?Target ?>
+#   </ENEC-MARK>
+#   <FLAM-MARK>
+#   <?Target ?>
+#   </FLAM-MARK>
+#   <GLWRTEST>
+#   <?Target ?>
+#   </GLWRTEST>
+#   <IPV>
+#   <?Target ?>
+#   </IPV> 
+#   <IKC>
+#   <?Target ?>
+#   </IKC>
+#   <CLS>
+#   <?Target ?>
+#   </CLS>
+#   </Approbation_Mark_Portal_Tendertext>  
+#   <Footer_Tendertext_FP>
+#   <?Target ?>
+#   </Footer_Tendertext_FP>
+#   <TenderText_FP>
+#   <?Target ?>
+#   </TenderText_FP>
+#   </TendertextAttributes>
+#   
