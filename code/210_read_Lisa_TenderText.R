@@ -18,6 +18,10 @@ LisaTT.r <-
                     sheet = 1, 
                     skip = 0)
 
+LisaTT2STEP_attribute_mapping.r <-
+  readxl::read_xlsx(path = "./data/LiSA_Attributes_withEMCC-STEP_Mapping_JE20181212.xlsx",
+                    sheet = 2, 
+                    skip = 1)
 StepFPs.r <-
   readr::read_csv(file="./data/prod_blue_tree.csv")
 
@@ -89,7 +93,7 @@ LisaTT.c %>%
 
 LisaTT.c %>%
   dplyr::group_by(CF_ID) %>%
-  dplyr::summarise(unique_tt_count = n_distinct(TextBrief)) %>%
+  dplyr::summarise(unique_tt_count = n_distinct(BasicText)) %>%
   dplyr::filter(unique_tt_count > 1) %>%
   dplyr::arrange(desc(unique_tt_count))
 
@@ -98,7 +102,7 @@ LisaTT.c %>%
 # check which introductionText can be migrated to the family level:
 LisaTT_introductionText.c <-
   LisaTT.c %>%
-  dplyr::mutate(introductionText = TextBrief) %>%
+  dplyr::mutate(introductionText = BasicText) %>%
   dplyr::select(CF_ID, FP_ID, introductionText) %>%
   dplyr::group_by(CF_ID) %>%
   dplyr::mutate(FP_count = n(),                              # count number of products per family
@@ -432,3 +436,55 @@ readr::write_excel_csv(LisaTT_appmarks_per_FP.c,
 #   </TenderText_FP>
 #   </TendertextAttributes>
 #   
+
+
+###############################################################################
+#
+# TEST-data in STEP QA (18-01-2019), "de_DE" context
+#
+# COMF-1217  &  FP-910505016065
+# FP-910400184612
+#
+###############################################################################
+# 2018-01-18 run 1
+# 
+# FP-910505016065: 
+# 
+# STEP-msg in STEA
+#   
+# <TendertextAttributes>
+#   <Introduction_Tendertext_FP/>
+#   <TenderTextAttributes_FP/>
+#   <Approbation_Mark_Portal_Tendertext>
+#   <CE-MARK>ja</CE-MARK>
+#   <ENEC-MARK>ENEC Zeichen</ENEC-MARK>
+#   <FLAM-MARK>NO | nein</FLAM-MARK>
+#   <GLWRTEST/>
+#   <IPV>IP66 | Schutz gegen Eindringen von Staub, strahlwassergeschützt</IPV>
+#   <IKC>IK08 | 5 J vandal-geprüft</IKC>
+#   <CLS>Schutzklasse II</CLS>
+#   </Approbation_Mark_Portal_Tendertext>
+#   <Footer_Tendertext_FP>Signify, http://www.lighting.philips.de</Footer_Tendertext_FP>
+#   <TenderText_FP/>
+# </TendertextAttributes>
+#   
+# FP-910400184612
+# 
+# <TendertextAttributes>
+#   <Introduction_Tendertext_FP/>
+#   <TenderTextAttributes_FP/>
+#   <Approbation_Mark_Portal_Tendertext>
+#   <CE-MARK>ja</CE-MARK>
+#   <ENEC-MARK>Nein</ENEC-MARK>
+#   <FLAM-MARK/>
+#   <GLWRTEST/>
+#   <IPV>IP65 | Schutz gegen Eindringen von Staub, strahlwassergeschützt</IPV>
+#   <IKC>IK08 | 5 J vandal-geprüft</IKC>
+#   <CLS>Schutzklasse I</CLS>
+#   </Approbation_Mark_Portal_Tendertext>
+#   <Footer_Tendertext_FP>Signify, http://www.lighting.philips.de</Footer_Tendertext_FP>
+#   <TenderText_FP>Lamp power: 2000 W</TenderText_FP>
+# </TendertextAttributes>
+
+
+
