@@ -102,7 +102,11 @@ LisaTT.c %>%
 # check which introductionText can be migrated to the family level:
 LisaTT_introductionText.c <-
   LisaTT.c %>%
-  dplyr::mutate(introductionText = BasicText) %>%
+  dplyr::filter(!is.na(BasicText)) %>%
+  dplyr::mutate(introductionText = stringr::str_replace_all(BasicText, pattern = "\r\r", replacement = " ")) %>% # remove newline characters
+  dplyr::mutate(introductionText = stringr::str_remove_all(introductionText, pattern = "\r")) %>% # remove newline characters
+  dplyr::mutate(introductionText = stringr::str_remove_all(introductionText, pattern = "\n")) %>% # remove newline characters
+  dplyr::mutate(introductionText = stringr::str_trim(introductionText, side = "both")) %>% # remove newline characters
   dplyr::select(CF_ID, FP_ID, introductionText) %>%
   dplyr::group_by(CF_ID) %>%
   dplyr::mutate(FP_count = n(),                              # count number of products per family
